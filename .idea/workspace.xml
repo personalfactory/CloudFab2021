@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d53eff98-82e4-49ae-9bb2-c95e0ca37ea9" name="Changes" comment="CloudFab20210928">
+      <change afterPath="$PROJECT_DIR$/.idea/CloudFab2021.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bs/carica_altro_prodotto_bs.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bs/carica_altro_prodotto_bs2.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bs/carica_bs.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bs/carica_bs_old.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bs/carica_cliente_bs.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bs/carica_cliente_bs2.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bs/carica_info_bs.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bs/carica_info_bs1.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bs/carica_info_bs1_old.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bs/carica_prodotto_bs.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bs/carica_prodotto_bs2.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bs/carica_prodotto_bs2_old.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bs/download_excel_prodotti_bs.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bs/elimina_bs_dato.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bs/elimina_bs_simulazione.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bs/gestione_clienti_bs.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bs/gestione_dati_input.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bs/gestione_info_bs.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bs/gestione_prodotti_bs.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bs/moduli/visualizza_clienti_bs.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bs/moduli/visualizza_info_bs.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bs/moduli/visualizza_prodotti_bs.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bs/riepilogo_info_bs.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bs/riepilogo_info_bs_old.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bs/salva_info_bs.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bs/salva_info_bs1.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bs/salva_riepilogo_bs.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bs/schede/ForceDownload.class.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bs/schede/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bs/schede/presentazione/download.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bs/schede/presentazione/download/ISOLCOLL.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bs/schede/presentazione/download/PAVIMIX.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bs/schede/presentazione/download/Personal Factory.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bs/schede/presentazione/download/RESTAUROMIX.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bs/schede/presentazione/download/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bs/schede/presentazione/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bs/tabellalink.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bs/vista_prodotti_catalogo.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dbmacchina/.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dbmacchina/creaDirFtp.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dbmacchina/downloadBackup.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dbmacchina/macchina57/origamidb.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dbmacchina/macchina58/origamidb.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dbmacchina/macchina58/origamidb.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dbmacchina/macchina59/Mov_20181130105110_DDT S12_09_10_2018.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dbmacchina/macchina59/Mov_20190514135255_TEST S5 I903004.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dbmacchina/macchina59/origamidb.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dbmacchina/macchina59/origamidb.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dbmacchina/macchina60/origamidb.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dbmacchina/macchina60/origamidb.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dbmacchina/macchina61/origamidb.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dbmacchina/macchina61/origamidb.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dbmacchina/macchina62/origamidb.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dbmacchina/macchina62/origamidb.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dbmacchina/macchina63/Mov_20181211141700_ICOPRES 11.12.18.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dbmacchina/macchina63/Mov_20181211141925_ICOPRES 11.12.18.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dbmacchina/macchina63/Mov_20181211142048_ICOPRES 11.12.18.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dbmacchina/macchina63/Mov_20181212090820_ICOPRES 11.12.18.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dbmacchina/macchina63/origamidb.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dbmacchina/macchina63/origamidb.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dbmacchina/macchina64/origamidb.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dbmacchina/macchina64/origamidb.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dbmacchina/macchina65/origamidb.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dbmacchina/macchina65/origamidb.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dbmacchina/macchina66/origamidb.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dbmacchina/macchina66/origamidb.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dbmacchina/macchina666/origamidb.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dbmacchina/macchina666/origamidb.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dbmacchina/macchina667/origamidb.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dbmacchina/macchina667/origamidb.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dbmacchina/macchina67/origamidb.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dbmacchina/macchina67/origamidb.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dbmacchina/macchina68/origamidb.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dbmacchina/macchina68/origamidb.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dbmacchina/macchina69/origamidb.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dbmacchina/macchina69/origamidb.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dbmacchina/macchina70/origamidb.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dbmacchina/macchina70/origamidb.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dbmacchina/macchina71/origamidb.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dbmacchina/macchina71/origamidb.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dbmacchina/macchina72/origamidb.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dbmacchina/macchina72/origamidb.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dbmacchina/macchina777/origamidb.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dbmacchina/macchina777/origamidb.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dbmacchina/origamidb55.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dbmacchina/origamidb56.sql" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1ylLg8CVuNmchx3zZ5BnDMNkBGW" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ChangesTree.GroupingKeys" value="directory" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+  </component>
+  <component name="Push.Settings">
+    <option name="SHOW_DETAILS_PANEL" value="false" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d53eff98-82e4-49ae-9bb2-c95e0ca37ea9" name="Changes" comment="" />
+      <created>1632821342538</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1632821342538</updated>
+    </task>
+    <task id="LOCAL-00001" summary="CloudFab20210928">
+      <created>1632821424066</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1632821424066</updated>
+    </task>
+    <task id="LOCAL-00002" summary="CloudFab20210928">
+      <created>1632821460028</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1632821460028</updated>
+    </task>
+    <task id="LOCAL-00003" summary="CloudFab20210928">
+      <created>1632821879539</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1632821879540</updated>
+    </task>
+    <task id="LOCAL-00004" summary="CloudFab20210928">
+      <created>1632822141329</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1632822141329</updated>
+    </task>
+    <task id="LOCAL-00005" summary="CloudFab20210928">
+      <created>1632822508161</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1632822508161</updated>
+    </task>
+    <task id="LOCAL-00006" summary="CloudFab20210928">
+      <created>1632823999402</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1632823999402</updated>
+    </task>
+    <task id="LOCAL-00007" summary="CloudFab20210928">
+      <created>1632824470277</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1632824470277</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="CloudFab20210928" />
+    <option name="LAST_COMMIT_MESSAGE" value="CloudFab20210928" />
+  </component>
+</project>
