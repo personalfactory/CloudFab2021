@@ -2,215 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d53eff98-82e4-49ae-9bb2-c95e0ca37ea9" name="Changes" comment="CloudFab20210928">
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/.htaccess" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20140131123913_Carbonato di calcio 0-600 MESH.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20140210145719_Foto 1.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20140213094538_CE Diameter.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20140213095622_The effects of GGBS on adhesive for tiles systems.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20140213103213_The effects of GGBS on adhesive for tiles systems.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20140213103442_CE Diameter.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20140213105638_CE Diameter.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20140213105723_CE Diameter.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20140217152115_60000102874.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20140305160740_60000103131_Bagnabilità.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20140311100444_qta_per_lotto.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20140312120947_DSCN0283.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20140313110948_Tylose MH 100001 P6 SHINETSU-CE Diameter-Number Distribution.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20140313113930_Tylose H20P2 DEAT133647.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20140314170640_DSCN0340.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20140324174339_DSCN0462.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20140327111245_60000102846-compressione1.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20140327111513_60000102846-compressione1.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20140327111859_60000102848-compressione1.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20140328121317_PB_Optibent_1056.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20140402121831_Melflux 4930 F SDS.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20140404085003_60000102976-compressione2.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20140404110149_60000102977-flessione3.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20140404111216_60000102995-compressione1.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20140407173614_60000102962-flessione1.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20140407185521_DSCN0672.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20140410085426_CE Diameter - Number Distribution.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20140410085438_CE Diameter - Volume Distribution.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20140410085456_HS Circularity - Number Distribution.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20140410085700_Intensity Mean - Number Distribution.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20140410090323_Scattergram CE Diameter VS HS Circularity.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20140410092350_CE Diameter- Volume Distribution.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20140410093644_Formiato di calcio_SDS.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20140414102808_Omyacarb 5 AV.PDF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20140414103201_Omyacarb 2 AV.PDF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20140414103414_Omyacarb 10 AV.PDF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20140414103938_Omyacarb 2 UM.PDF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20140414171114_60000103043-flex1.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20140414171328_60000103043-flex1.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20140414171414_60000103043-flex1.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20140414171522_60000103043-flex2.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20140414171555_60000103043-flex2.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20140414172024_60000103043-compr2.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20140414173724_DSCN0794.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20140414175639_60000103045-flex1.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20140414175937_60000103045-compr1.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20140417155058_ELOTEX FX 7000 Spettro Raman Principale.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20140417155507_ELOTEX FX 7000 Spettro Raman Principale.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20140417160048_ELOTEX FX 7000 Spettro Raman Principale.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20140423123722_60000102970-compr1.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20140424085045_HS Circularity - Number Distribution.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20140430113944_spettro raman_OFL 190314 SG.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20140507094607_FLESSIONE PROV 2 60- XL COLOR-60000203168.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20140507101500_COMPRESSIONE PROV 4 (senza epossido) (parte 1) 60-XL Color.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20140507102247_COMPRESSIONE PROV 4 (senza epossido) (parte 1) 60-XL Color.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20140507172748_ALL PARTICLES, SORTED BY CE DIAMETER, DESCENDING.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20140508143409_COMPRESSIONE - ISOLPOROX CCM PROV1 PARTE 1.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20140508143724_COMPRESSIONE - ISOLPOROX CCM PROV1 PARTE 2.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20140508143831_COMPRESSIONE - ISOLPOROX CCM PROV1 PARTE 1.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20140514104254_Spettro Raman Componente Principale.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20140514182150_Spettro Raman Principale.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20140516104339_Spettro Raman Componente Principale.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20140516104751_Spettro Raman Componente Secondaria.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20140516131217_DSCN1044_prov1.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20140522082657_PROVA DI FLESSIONE - Pavimix 60 xl color 03 provino 1.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20140522084937_PROVA DI Compressione - Restauromix TX40 provino 1a - 5gg.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20140523151100_PROVA DI FLESSIONE - RESTAUROMIX TX RASO 20_60000203175 prov2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20140523151337_PROVA DI FLESSIONE - RESTAUROMIX TX RASO 20_60000203175 prov1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20140527143439_CE Diameter - Volume Distribution.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20140527143605_CE Diameter - Volume Distribution.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20140527143641_CE Diameter -Number Distribution.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20140527143732_HS Circularity - Number Distribution.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20140527143811_Intensity Mean - Number Distribution.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20140527143838_Scattergram CE Diameter VS HS Circularity.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20140527143854_Particles Picture.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20140527144246_CE Diameter -Number Distribution.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20140527144338_CE Diameter - Volume Distribution.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20140527144409_CE Diameter - Number Distribution.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20140527144458_HS Circularity - Number Distribution.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20140527144607_Intensity Mean - Number Distribution.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20140527144630_Particles Picture.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20140527144644_Scattergram CE Diameter VS HS Circularity.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20140528112205_CE Diameter - Number Distribution.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20140528112236_CE Diameter - Volume Distribution.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20140528112310_HS Circularity - Number Distribution.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20140528112345_Intensity Mean - Number Distribution.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20140528112409_Particles Picture.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20140528112428_Scattergram CE Diameter VS HS Circularity.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20140528161018_PROVA DI Compressione - Prov2B TX Raso 50 02.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20140528161801_DSCN1120_prov2.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20140610144508_60000203213 30min.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20140610181417_PROVA DI COMPRESSIONE - 10.6.2014 - 18..pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20140613174022_PROVA DI FLESSIONE - 13.6.2014 - 10.5 60000203324     16 H20 PROVINO 3.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20140617085929_quantification.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20140617125057_Sulfur (128x128 pixels).jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20140617125352_quantification.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20140620144132_carbonato di calcio De Angelis 600 -1500.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20140625090123_Spettro Raman Componente Principale.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20140625114541_DSCN1497.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20140625152322_60000203381 report.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20140625180235_PROVA DI FLESSIONE - 60000203366 n1 a 6gg.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20140625180327_PROVA DI FLESSIONE - 60000203366 n3 a 6gg.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20140626115150_BENOCCI POLVERE 1.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20140626154432_fontani r.  - filler.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20140701083142_PROVA DI COMPRESSIONE-60000203257 provino 1A a 33gg.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20140707181855_60000203196 CAMPIONE RIFERIMENTO.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20140925154657_CE Diameter - Number Distriution.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20140925155259_RItiro volumetrico ECOFIBAR (aggr naturale e 1,2% CaO) 01-09.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20140925160304_CE Diameter - Number Distriution.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20140925163047_CE DIAMETER - NUMBER DISTRIBUTION.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20140925163120_CE DIAMETER - VOLUME DISTRIBUTION.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20140925163131_Classification Chart - Perc Volume.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20140925163222_HS Circularity - Number Distribution.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20140925163336_Intensity Mean - Number Distribution.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20140925163406_sds-Gessogamma41 roccastrada-ed_2-rev_del-16-05-2011.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20140925163425_PARTICLES PICTURE.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20140925163437_SCATTERGRAM CE DIAMETER VS HS CIRCULARITY.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20140926152602_HS Circularity - Number Distribution.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20140926170501_2014-09-25-3322.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20140929162101_image.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20140929162933_DSCN2601.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20140929165117_DSCN2598.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20140929165637_DSCN2597.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20140929170029_image(1).jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20141003144318_DSCN2716.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20141124151427_Iokal 0-800 ABCON.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20141219125626_IMG_4035.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20150126165924_CONFRONTO RITIRO LINEARE, VOLUMETRICO FUGA COLMEF 203855.xls" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20150128093510_CONFRONTO RITIRO LINEARE, VOLUMETRICO FUGA COLMEF 203855.xls" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20150228171412_IMG_3738.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20150228171517_IMG_3738.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20150306144834_IMG_0019.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20150306145015_IMG_0018.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20150401150830_novagrout_f.uk__1.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20150505090402_image.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20150616103614_Quarzo fine russia comp355.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20150616104221_Quarzo fine russia comp355.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20150626155721_1435327300013-1952427370.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20150929101449_144351442165871442757.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20150929172016_pavimix 60 - no 500S - 204670.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20151112172636_1447345485144-912215164.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20151118125145_14478471863882083084675.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20151130114655_CE Diamegter - Volume Distribution.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20160224112019_1456308936106993470577.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20160224112346_1456309228014-1186889616.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20160224112749_14563094498271171354407.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20160318094258_ELOTEX FX7000.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20160325120918_DSC_0821.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20160509122048_1462789005780-1334386802.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20160601174704_GreuKollR600_08675 (1) (1).pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20160722094639_SAND 150 micron.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20161027144751_5592.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20170109154714_ISOLVASCHE ELASTIC.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20170109154910_PERGOPAK M3 28-15SS REV 5 IT_CLP.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20170504112023_Nx200 205752 24h laser2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20170504113053_Nx200 205752  dal 1 al 21 giorno laser2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20170612162642_20170612_114420.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20170612165519_20170612_115216.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20171102112031_TCNA- ISOLCOLL US20 - A118.11 shears.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20171107125336_f40a5c8f6e9accc1889916bc2b03fda4.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20171115142533_ads1 sds.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20171115144643_ads1 sds.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20180302101603_Caccio Siliceo 800-1000.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20180306112017_Curva Granulometrica Cava Stilo comp365.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20180309094316_Curva Granulometrica Cava Stilo comp365.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20180601125928_APB 300 comp 668.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20180612125545_krclean7000_english.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20180613094226_Budit-6H-2007.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20180613113125_Tricoat-A_B_C-rev1.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20180613114053_Tricoat-A_B_C-rev1.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20180613114913_Tricoat-A_B_C-rev1.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20180619090706_SCHEDA TECNICA FUGAPROOF_ ITA.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20180619091327_SCHEDA TECNICA FUGAPROOF_ ITA.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20180627101502_bermocoll-m50- TDS.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20180628142756_SITREN_P_730_0715_EN_OI_CON.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20181112103130_Curva granulometrica Sabbia di Cava Tipo 2 (CAVA VINCI) (2).xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20181119091523_1542615222300-1044079023.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20181127094402_IMG_20181120_132247.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20181127095046_IMG_20181120_132251.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20181127095815_IMG_20181120_132243.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20181127104512_IMG_20181120_132226.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20181128111827_Report Sabbia di cava Tipo 2.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20181128114422_Report Sabbia di cava Tipo 3.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20181128114525_Report Sabbia di cava Tipo 3.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20181128120948_Report Sabbia di cava Tipo 6.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20181205100552_IMG_20181203_125759.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20181205172629_STC-0000570002_01.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20181205173124_SSO-0000577671_01.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20181220100209_IMG_20181211_131055_resized_20181212_095622642.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20181220101722_IMG_20181211_131059_resized_20181212_095615054.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20190108150417_1546956107677-396307180.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20190115092527_IMG_20190108_125945.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20190115093717_IMG_20190108_125945.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20190115094323_IMG_20190108_125951.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20190115094518_IMG_20190108_130000.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20190129151038_Curva granulometrica SABLE DE OULED LIOUA - ALGERIA.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20190204144932_0 gradi.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20190205150954_Catalogue_Copper_Alloy_Powders.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20190206102108_IMG_20190128_133257.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20190208123828_IMG_20190207_125608.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20190211091804_IMG_20190211_085005.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20190227103654_23%.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20190227103957_23%.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20190405101346_OTTONE.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20191001130806_Dynasylan® - HYDROSIL 1153.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20210624094359_sabbia safon 0-450 micron.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20210624094429_sabbia safon 0-450__800 micron.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/lab/old/Lab_20210629105443_carbonato sofap 450-600 micron.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -316,7 +108,21 @@
       <option name="project" value="LOCAL" />
       <updated>1632831214008</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="CloudFab20210928">
+      <created>1632831482785</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1632831482785</updated>
+    </task>
+    <task id="LOCAL-00012" summary="CloudFab20210928">
+      <created>1632831828654</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1632831828654</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
