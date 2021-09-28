@@ -1,0 +1,1025 @@
+/* Inizio menu a tendina */
+#menuInephos {
+    width:230px; 
+    border-top: 1px solid #A00028;
+    border-right: 1px solid #A00028;
+    visibility:hidden; 
+    position:absolute;
+    margin:10px;
+    color:#0000FF;
+    z-index: 1000;
+}
+.XulMenu {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 12px; /*carattere del menu principale*/
+    -moz-user-select: none;
+    background-color: #FFFFFF;
+    width:100%; 
+
+
+}
+.XulMenu .button,
+.XulMenu .button:hover,
+.XulMenu .button-active,
+.XulMenu .button-active:hover {
+    line-height: normal;
+    padding: 5px 6px 4px 6px;
+    border: 1px solid #ECE9D8;
+    color: #000000;
+    text-decoration: none;
+    cursor: default;
+    white-space: nowrap;
+    display: block;
+    position: relative;
+
+}
+.XulMenu .button:hover {
+    border-color: #ffffff #ACA59D #ACA59D #ffffff;
+
+}
+.XulMenu .button-active,
+.XulMenu .button-active:hover {
+    border-color: #ACA59D #ffffff #ffffff #ACA59D;
+
+}
+.XulMenu .item,
+.XulMenu .item:hover,
+.XulMenu .item-active,
+.XulMenu .item-active:hover {
+    background:  #FFFFFF ;/*colore dei sottomenu*/
+    line-height: normal;
+    padding: 3px 30px 3px 20px;
+    color: #000000;
+    text-decoration: none;
+    cursor: default;
+    white-space: nowrap;
+    display: block;
+    position: relative;  
+
+}
+
+.XulMenu .item:hover,
+.XulMenu .item-active,
+.XulMenu .item-active:hover {
+    background: #316AC5;
+    color: #ffffff;
+
+
+}
+.XulMenu .section {
+    background: #CCC;
+    border: 1px solid;
+    border-color: #F1EFE2 #716F64 #716F64 #F1EFE2;
+    padding: 2px 1px 1px 1px;
+    position: absolute;
+    visibility: hidden;
+    z-index: -1;
+
+}
+.XulMenu .arrow {
+    position: absolute;
+    top: 7px;
+    right: 8px;
+    border: 0;
+
+}
+
+* html .XulMenu td { position: relative; } /* ie 5.0 fix */
+/* fine menu a tendina*/
+
+body { /* Corpo della pagina*/ 
+    margin: 5px 5px 5px 5px ;
+    /*  padding: 0; */
+    background: #FFFFFF ; 
+    width:100%;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+input, select, textarea {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+
+#Titolo {
+    background: #ECE9D8;
+    border: 1px solid;
+    border-color: #ffffff #ACA899 #ACA899 #ffffff;
+    padding-left: 5px;
+    cursor: default;
+}
+
+#container { /*Contenitore generale della pagina sotto il menu*/
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    /*font-weight: bold;*/
+}
+
+#mainContainer{
+    /*background:#A00028;*/
+    width:1320px;
+    margin: 0 auto;
+    /*width:100%;*/
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    /*  font-weight: bold;*/
+    alignment-baseline: auto;
+    float:center;
+
+    /*test*/
+    /*  background:#716F64*/
+}
+
+#bigMainContainer{
+    /*background:#A00028;*/
+    width:1700px;
+    margin: 0 auto;
+    /*width:100%;*/
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    /*  font-weight: bold;*/
+    alignment-baseline: auto;
+    /*test*/
+    /*background:#FFFFFF716F64*/
+
+}
+
+#tracciabilitaContainer{
+    width:1320px;
+    margin: 0 auto;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+}
+#labContainer{
+    /* width:1170px;*/
+    width:1320px;
+    margin: 0 auto;
+    font-size: 14px;
+    /*background:#A00028;*/
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+
+    /*font-weight: bold;*/
+}
+#barcode{
+    width:90%;
+    text-align:center;    
+    font-size: 18px;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+
+
+
+#msg { /*Messaggi*/
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: #FFF;
+    text-align:left;
+    background-color:#A00028;
+}
+
+#msgErr { /*Messaggi di errore*/
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    text-align:left;
+    background-color:#FFFF99;
+}
+
+#msgLog { /*Messaggi di log*/
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    text-align:left;
+    color:#716F64;
+}
+
+
+.images { /*Se inserisco immagini con link mi mette il bordo a zero*/
+    border:0px;
+}
+
+.images2 { /*Se inserisco immagini con link mi mette il bordo a zero*/
+    border:0px;
+    height:50px;
+    width:50px;
+}
+.icone{ 
+    border:0px;
+    height:30px;
+    width:30px;
+}
+.icone2{
+    border:0px;
+    height:50px;
+    width:50px;
+}
+.icone3
+{
+    border:0px;
+    height:70px;
+    width:70px;
+}
+.icone4
+{
+    border:0px;
+    height:40px;
+    width:40px;
+}
+p{ 
+
+    font-size: 11px; 
+    margin: 0.5em; 
+}
+h1{ 
+
+    font-size: 15px; 
+    margin: 10px;
+    /*  color:#35351B;*/
+}
+
+
+#Login{ /*DIV DELLA PAGINA DI LOGIN*/
+    width:600px;
+    height:400px;
+    margin:150px auto;
+    border: 1px solid;
+    border-color: #ACA899 #ACA899 #ACA899 #ACA899;
+    /*background:#0000FF;*/
+}
+
+#inputLogin{
+
+    height:25px;
+    width:220px;
+    text-indent:7px;
+    background-color:#E1E1E1 !important;
+    border:none;
+    focus {outline: none;}
+    autocomplete: off;
+}
+
+
+#InfoCont{ /*DIV DELLA PAGINA DI LOGIN*/
+    width:800px;
+    /**height:1000px;*/
+    margin:150px auto;
+    border: 1px solid;
+    border-color: #ACA899 #ACA899 #ACA899 #ACA899;
+    padding: 10px;
+    /*background:#E1E1E1;*/
+}
+
+
+/* Utilizzata per il login e la scegli macchina laboratorio*/
+.table2{ /*Tabella grigia della pagina di login*/
+    border:none;
+    /*background:#E1E1E1;*/
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size:12px;
+    width:100%;
+    height:100%;
+
+
+}
+.table3{ /*Tabella incolore delle visualizzazioni*/
+    border:none;
+    background:#FFF;  
+    color:#036;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size:12px;
+    width:100%;
+
+    /*    border-radius: 5px 5px 5px 5px;*/
+
+}
+
+/* Utilizzata per il login e la scegli macchina laboratorio*/
+.tableLingue{ /*Tabella grigia della pagina di login*/
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size:12px;
+    width:70px;
+    align: right;
+    /*background:#F9F6E5;*/
+
+}
+
+.cella1{
+    height: 30px;
+    background:#F9F6E5;/*cella di colore grigio chiarissimo*/
+    text-align:left;
+    text-indent: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+
+}
+.cella8{
+    height: 30px;
+    background:#F9F6E5;/*cella di grigio chiaro*/
+    text-align:left;
+    text-indent: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+
+}
+.cella1Right{
+    height: 30px;
+    background:#F9F6E5;/*cella di colore grigio chiarissimo*/
+    text-align:right;
+    text-indent: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+
+}
+.cella1center{
+    height: 30px;
+    background:#F9F6E5;/*cella di colore grigio chiarissimo*/
+    text-align:center;
+    text-indent: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+
+}
+.cella11{
+    height:30px;
+    background:#F9F6E5;/*cella di colore grigio chiarissimo*/
+    text-align:left;
+    text-indent:5px;
+    border-spacing: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+
+}
+.cella111{
+    height: 60px;
+    background:#F9F6E5;/*cella di colore grigio chiarissimo*/
+    text-align:center;
+    font-size: 18px;
+    padding-left: 5px;
+    padding-right: 5px;
+
+}
+.cella1_tracc{
+    height: 60px;
+    background:#F9F6E5;/*cella di colore grigio chiarissimo*/
+    text-align:center;
+    font-weight:bold;
+    font-size: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.cella2{/*cella di colore grigio*/
+    height: 30px;
+    background:#E1E1E1;
+    text-align:left;
+    text-indent:5px;
+    padding-left: 5px;
+    padding-right: 5px;
+
+
+}
+.cella22{/*cella di colore grigio*/
+    height: 60px;
+    background:#E1E1E1;
+    text-align:center;
+    font-weight:bold;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.cella3{/*cella di intestazione campi rosse*/
+    height: 40px;
+    background:#A00028;	  
+    text-align:center;
+    color:#FFFFFF;
+    font-weight:bold;
+    text-indent: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+
+}
+
+.cella3min{/*cella di intestazione campi rosse*/
+    height: 40px;
+    background:#A00028;	  
+    text-align:center;
+    color:#FFFFFF;
+    font-weight:bold;
+    font-size:12px;
+    text-indent: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+
+}
+.cella3Light{/*cella di intestazione campi rosse*/
+    height: 40px;
+    background:#A00028;	  
+    text-align:center;
+    color:#FFFFFF;
+    /*    text-transform: lowercase;
+        font-weight:bold;*/
+    text-indent: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+
+}
+/** Pulsante freccia ordinamento */
+.button3{
+    height:10px;
+    text-align:center;
+    background:#A00028;	  
+    border-top: #A00028;
+    border-left: #A00028;
+    border-right: #A00028;
+    border-bottom: #A00028;
+}
+/** Pulsante numero di pagina da selezionare */
+.button4{
+    height:15px;
+    text-align:center;
+    background: #E1E1E1;	  
+    border-top: #E1E1E1;
+    border-left: #E1E1E1;
+    border-right: #E1E1E1;
+    border-bottom: #E1E1E1;
+    margin-left: 2px;
+    margin-right: 2px;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+/** Pulsante numero di pagina selezionata*/
+.button5{
+    height:15px;
+    text-align:center;
+    color:#FFFFFF;  
+    background:#ACA59D;	  
+    border-top: #ACA59D;
+    border-left: #ACA59D;
+    border-right: #ACA59D;
+    border-bottom: #ACA59D;
+    margin-left: 2px;
+    margin-right: 2px;
+    padding-left: 2px;
+    padding-right: 2px;
+
+}
+/** Pulsante + o - */
+.button6{
+    height: 15px;
+    background:#A00028;	  
+    background:#A00028;	  
+    border-top: #A00028;
+    border-left: #A00028;
+    border-right: #A00028;
+    border-bottom: #A00028;
+    color:#FFFFFF;
+    font-weight:bold;
+
+}
+.cella33{/*cella di intestazione campi rosse*/
+    height: 60px;
+    background:#A00028;	  
+    text-align:center;
+    color:#FFFFFF;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.cella4{/*cella di colore grigio chiaro*/
+    height: 30px;
+    background:#E1E1E1;
+    text-align:left;
+    text-indent: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+
+}
+
+.cella4Right{/*cella di colore grigio chiaro*/
+    height: 30px;
+    background:#E1E1E1;
+    text-align:right;
+    text-indent: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+
+}
+
+.cella44{/*cella di colore grigio chiaro*/
+    height: 30px;
+    background:#E1E1E1;
+    /*background-color:#FFFF99;*/
+    text-align:left;
+    text-indent: 5px;
+    color: #FF0000;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.cella5{/*cella di colore grigio chiaro*/
+    height: 30px;
+    background:#E1E1E1;
+    text-align:right;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.cella6{/*disabilita*/
+    height: 30px;
+    background:#F9F6E5;/*cella di colore grigio chiarissimo*/
+    text-align:center;
+    text-indent: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+
+}
+
+/**Cella utilizzata nella selezione del livello di un gruppo d'acquisto
+e del tipo di riferimento geografico nell0 script di gestione della produttività */
+.cella7
+{
+    width:170px;
+    background:#E1E1E1;
+    padding-left: 5px;
+}
+
+th {/**cella di intestazione tabella */
+    height: 40px;
+    background:#FFF;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size:14px;
+    color:#35351B;
+    padding-left: 5px;
+    padding-right: 5px;
+    /*border-radius: 5px 5px 5px 5px;*/
+
+}
+
+
+.cellaOption{/*cella di colore grigio*/
+    text-align:right;
+    font-weight:bold;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size:14px;
+    padding-left: 5px;
+
+}
+.inputStandard{
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size:14px;
+
+}
+
+.inputTracc{
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size:18px;
+    font-weight:bold;
+}
+
+.dataRig
+{
+
+    background-color:#FEFEE0;
+    color: #000000;
+    font-weight: normal;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.dataRigRed
+{
+
+    background-color:#FEFEE0;
+    color: #FF0000;
+    font-weight: normal;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.dataRigGreen
+{
+    background-color: #CCFF99; 
+    color: #000000;
+    font-weight: normal;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.dataRigLightGray
+{
+
+    background-color: #F9F6E5; 
+    color: #000000;
+    font-weight: normal;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.dataRigLightGray12
+{
+    font-size:12px;
+    background-color: #F9F6E5; 
+    color: #000000;
+    font-weight: normal;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.dataRigGray
+{
+    font-size:12px;
+    background-color: #E1E1E1; /**grigio chiaro*/
+    color: #000000;
+    font-weight: normal;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.dataGray
+{    
+    background-color: #E1E1E1; 
+    color: #000000;
+    font-weight: normal;
+}
+.dataRigWhite   
+{  
+    font-size:12px;
+    background-color: #ACA59D; 
+    color: #000000;
+    font-weight: normal;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.dataWhite
+{  
+    background-color: #ACA59D; 
+    color: #000000;
+    font-weight: normal;
+
+}
+.dataRigOrange
+{
+
+    background-color: orange;
+    color: #000000;
+    font-weight: normal;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.dataRigYell
+{
+    font-size:12px;
+    background-color: #FFFF99;
+    color: #000000;
+    font-weight: normal;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.dataRigYellBig
+{
+    font-size:14px;
+    background-color: #FFFF99;
+    color: #000000;
+    font-weight: normal;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.dataRigLight
+{
+    font-size:12px;
+    color:#808080;  
+    background-color: #E1E1E1; 
+    font-weight: normal;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+
+
+.box1 {
+    background: #4c74be;
+    overflow-x: scroll;
+}
+
+.box2 {
+    background: #4c74be;
+    overflow-x: auto;
+}
+
+
+.cellaMergeHFixI
+{
+    height: 50px;  
+    background-color: #E1E1E1; /**grigio chiaro*/
+    color: #000000;
+    font-weight: normal;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.cellaMergeHFixMt
+{
+    height: 30px;  
+    background-color: #E1E1E1; /**grigio chiaro*/
+    color: #000000;
+    font-weight: normal;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.cellaMergeHFix
+{
+    height: 18px;  
+    background-color: #ACA59D; 
+    color: #000000;
+    font-weight: normal;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.uniMisStyle {
+
+    font-size:12px; 
+    color:#716F64
+
+}
+
+.commentiStyle {
+
+    font-size:12px; 
+    color:#716F64
+
+}
+
+.thumbnail {position: relative; z-index: 8; text-decoration: none !important; }
+.thumbnail:hover {background: transparent; z-index: 9; }
+.thumbnail > div {display: none; position: absolute; top: 0; left: 50px; padding: 5px}
+.thumbnail > div img {padding: 2px}
+.thumbnail:hover > div {display: block; border: 1px solid #DDD; background-color: #FFF; color: black}
+.thumbnail:hover span span {display: inline; border: none}
+
+.buttonMenu{
+    height:15px;
+    text-align:center;
+    background:#A00028;	  
+    border-top: #A00028;
+    border-left: #A00028;
+    border-right: #A00028;
+    border-bottom: #A00028;
+    border-style:none;
+}
+
+/*Test tab parametri insacco*/
+/*#tabs { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 14px; }*/
+#tabs li {
+    list-style: none;
+    float: left;
+    width: 150px;
+    height: 35px;
+    margin: 0 5px;
+}
+#tabs li a {
+    background-color:#dedede;
+    color: #222;
+    text-decoration: none;
+    width: 150px;
+    height: 35px;
+    display: block;
+    float: left;
+    line-height: 35px;
+    text-align: center;
+
+}
+
+
+#tabs li a:hover,
+#tabs li a:active { background-color: #ededed;}
+#tabs li a.current {background-color: #0000FF;}
+
+
+
+
+
+div.content {
+    color: #222;
+    background-color: #efefef;
+    /*padding:5px;*/
+    display: block;
+    width: 100%;
+    height: 1170px;
+    /*height: 100%;*/  
+    line-height: 22px;
+
+    /*background: #008000; verde*/
+} 
+
+#tabContainer {
+    clear: both;
+    /*height: 90%;  350px + 25px (padding sx) + 25px (padding dx) */
+    height: 1170px;    
+    /*height: 100%;*/  
+    display: block;
+    /*background: #0000FF; blue*/
+    overflow: hidden; 
+    width: 100%;
+
+}
+div.Origami4 {
+
+    width: 100%;
+    height: 450px;
+    /*background: #FF0000; rosso*/
+
+
+} 
+
+
+/*.pulsanteAccessoFtp{
+    background-color: #AAAAAA;
+    height:80px;
+    width:400px;
+    margin:50px auto;
+    text-align:center;
+    line-height: 80px;
+    color:#ffffff;
+    border-radius: 5px 5px 5px 5px;
+}
+
+.pulsanteRiceviAgg{
+    background-color: #AAAAAA;
+    height:80px;
+    font-size:18px;
+    width:400px;
+    margin:50px auto;
+    text-align:center;
+    line-height: 80px;
+    color:#ffffff;
+    border-radius: 5px 5px 5px 5px;
+}*/
+#pulsanteAccessoFtp{
+    border-radius: 5px 5px 5px 5px;
+    background:#E1E1E1;
+    margin:50px auto;
+    height:80px;
+    width:500px;
+    
+    text-align:center;
+    line-height: 80px; /* verticale */
+    font-size: 18px;    
+    
+}
+/*pulsante sfumato grigio*/
+#pulsanteAccessoFtp:hover {
+
+    background: #808080;
+    background: -webkit-gradient(linear, left top, left bottom, from(#808080), to(#CCC));
+    background: -webkit-linear-gradient(top,  #808080,  #CCC);
+    background: -moz-linear-gradient(top,  #808080,  #CCC);
+    background: -ms-linear-gradient(top,  #808080,  #CCC);
+    background: -o-linear-gradient(top,  #808080,  #CCC);
+    background: linear-gradient(top,  #808080,  #CCC);
+}
+
+
+#pulsanteAccessoFtpMac {
+
+   border-radius: 5px 5px 5px 5px;
+    background:#E1E1E1;
+    margin:50px auto;
+    height:80px;
+    width:500px;
+    text-align:center;
+    line-height: 80px; /* verticale */
+    font-size: 18px;
+    
+}
+/*pulsante sfumato grigio scuro*/
+#pulsanteAccessoFtpMac:hover {
+
+    background: #808080;
+    background: -webkit-gradient(linear, left top, left bottom, from(#808080), to(#CCC));
+    background: -webkit-linear-gradient(top,  #808080,  #CCC);
+    background: -moz-linear-gradient(top,  #808080,  #CCC);
+    background: -ms-linear-gradient(top,  #808080,  #CCC);
+    background: -o-linear-gradient(top,  #808080,  #CCC);
+    background: linear-gradient(top,  #808080,  #CCC);
+}
+
+
+
+
+
+
+
+
+
+
+
+#pulsanteAgg{
+    border-radius: 5px 5px 5px 5px;
+    background:#E1E1E1;
+    height: 80px;
+    text-align:center;
+    line-height: 80px; /* verticale */
+    margin:50px auto;
+    height:80px;
+    width:500px;   
+    font-size: 18px;    
+    
+}
+/*pulsante sfumato grigio*/
+#pulsanteAgg:hover {
+
+    background: #808080;
+    background: -webkit-gradient(linear, left top, left bottom, from(#808080), to(#CCC));
+    background: -webkit-linear-gradient(top,  #808080,  #CCC);
+    background: -moz-linear-gradient(top,  #808080,  #CCC);
+    background: -ms-linear-gradient(top,  #808080,  #CCC);
+    background: -o-linear-gradient(top,  #808080,  #CCC);
+    background: linear-gradient(top,  #808080,  #CCC);
+}
+
+
+#pulsanteBkp {
+
+   border-radius: 5px 5px 5px 5px;
+    background:#E1E1E1;
+    height: 80px;
+    margin:50px auto;
+    height:80px;
+    width:500px;
+    text-align:center;
+    line-height: 80px; /* verticale */
+    font-size: 18px;
+    
+}
+/*pulsante sfumato grigio scuro*/
+#pulsanteBkp:hover {
+
+    background: #808080;
+    background: -webkit-gradient(linear, left top, left bottom, from(#808080), to(#CCC));
+    background: -webkit-linear-gradient(top,  #808080,  #CCC);
+    background: -moz-linear-gradient(top,  #808080,  #CCC);
+    background: -ms-linear-gradient(top,  #808080,  #CCC);
+    background: -o-linear-gradient(top,  #808080,  #CCC);
+    background: linear-gradient(top,  #808080,  #CCC);
+}
+
+
+.listBoxAgg{
+    margin:50px auto;
+    border-radius: 5px 5px 5px 5px;
+    height: 40px;   
+    width:500px;
+    font-size: 18px; 
+}
+.buttonInvia {
+    border-radius: 5px 5px 5px 5px;
+    background:#E1E1E1;
+    font-size: 18px; 
+    height: 40px;
+    padding-left: 10px;
+    height: 40px;   
+    width:200px;
+}
+
+.buttonInvia:hover {
+    background: #808080;
+    background: -webkit-gradient(linear, left top, left bottom, from(#808080), to(#CCC));
+    background: -webkit-linear-gradient(top,  #808080,  #CCC);
+    background: -moz-linear-gradient(top,  #808080,  #CCC);
+    background: -ms-linear-gradient(top,  #808080,  #CCC);
+    background: -o-linear-gradient(top,  #808080,  #CCC);
+    background: linear-gradient(top,  #808080,  #CCC);
+    
+}
+
+.cella45{/*cella di colore grigio*/
+    height: 10px;
+    background:#A6A6A6;
+    text-align:center;
+    font-weight:bold;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.cella46{/*cella di colore grigio*/
+    height: 10px;
+    background:#E1E1E1;
+    text-align:center;
+    font-weight:normal;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.cella47{/*cella di colore grigio chiarissimo*/
+    height: 10px;
+    background:#F9F6E5;;
+    text-align:center;
+     font-weight:normal;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.row.head th {
+  padding-top: 10px;
+  padding-bottom: 10px; 
+}
+
+
+
