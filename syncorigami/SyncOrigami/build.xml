@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- You may freely edit this file. See commented blocks below for -->
+<!-- some examples of how to customize the build. -->
+<!-- (If you delete it and reopen the project it will be recreated.) -->
+<!-- By default, only the Clean and Build commands use this build script. -->
+<!-- Commands such as Run, Debug, and Test only use this build script if -->
+<!-- the Compile on Save feature is turned off for the project. -->
+<!-- You can turn off the Compile on Save (or Deploy on Save) setting -->
+<!-- in the project's Project Properties dialog box.-->
+<project name="SyncOrigami" default="default" basedir=".">
+  <description>Builds, tests, and runs the project SyncOrigami.</description>
+  <import file="nbproject/build-impl.xml"/>
+  
+  <!-- GENERA IL DTD PER UN PACKAGE -->
+  <!-- GENERA LE VARIE CARTELLE CHE CONTERRANNO I FILE DI AGGIORNAMENTO-->
+  <property file="syncorigami.properties"/>
+  
+   <!-- ##### DATABASE ###################################################### -->
+  <property name="sql.dir" value="${basedir}/sql" />
+  <property name="sql.script.dir" value="${sql.dir}/scriptTest"/>
+  <property name="sql.dump.dir" value="${sql.dir}/dump"/>
+  <property name="lib.dir" value="${basedir}/lib"/>
+  <property name="lib.mysqldriver.dir" value="${lib.dir}/MySQLDriver"/>
+  <property file="scritpTest/sqlscript.conf"/>
+  <!-- LOCAL SERVER MYSQL CONF -->
+  <property name="local.hostname" value="localhost"/>
+  <property name="mysql.port" value="3306"/>
+  <property name="mysql.gdpa.server.dbname" value="serverdb"/>
+  <property name="mysql.gdpa.macchina.dbname" value="origamidb"/>
+  <property name="local.mysql.jdbc.connection" value="jdbc:mysql://${local.hostname}:${mysql.port}"/>
+  <!--<property name="local.mysql.gdpa.jdbc.url" value="${local.mysql.jdbc.connection}/${mysql.gdpa.server.dbname}"/>-->
+    
+  <target name="init-jaxb">
+   
+    <mkdir dir="${basedir}/${server.xml.schema.generate.dir}"/>
+    <mkdir dir="${basedir}/${server.xml.data.out.generate.dir}"/>
+    <mkdir dir="${basedir}/${server.xml.data.out.compress.dir}"/>
+    <mkdir dir="${basedir}/${server.xml.data.out.transfered.dir}"/>
+    <mkdir dir="${basedir}/${server.xml.data.in.compress.dir}"/>
+    <mkdir dir="${basedir}/${server.xml.data.in.uncompress.dir}"/>
+    <mkdir dir="${basedir}/${server.xml.data.in.downloaded.dir}"/>
+    
+    <mkdir dir="${basedir}/${macchina.xml.schema.generate.dir}"/>
+    <!--<mkdir dir="${basedir}/${macchina.xml.data.out.generate.dir}"/>
+    <mkdir dir="${basedir}/${macchina.xml.data.out.compress.dir}"/>
+    <mkdir dir="${basedir}/${macchina.xml.data.out.transfered.dir}"/>
+    <mkdir dir="${basedir}/${macchina.xml.data.in.compress.dir}"/>
+    <mkdir dir="${basedir}/${macchina.xml.data.in.uncompress.dir}"/>
+    <mkdir dir="${basedir}/${macchina.xml.data.in.downloaded.dir}"/>-->
+
+</target>
+
+   
+ <!-- <property name="schemagen.destdir" value="${basedir}/XMLSchema"/> -->
+    
+  <!-- Construct Java EE classpath -->
+  <path id="javaee.classpath">
+    <fileset dir="${basedir}/lib">
+      <include name="**/*.jar"/>
+    </fileset>
+  </path>
+  
+    
+  <target name="-post-compile" depends="schemagen-generate">
+    <!--SERVER-->
+    <copy file="${src.dir}/${server.jaxb.package.name}/${jaxb.index.file.name}" todir="${build.dir}/classes/${server.jaxb.package.name}"/>
+    <move file="${basedir}/${server.xml.schema.generate.dir}/${server.xml.schema.generate.file.name}" tofile="${basedir}/${server.xml.schema.generate.dir}/${server.xml.schema.dest.file.name}"/>
+    <copy file="${basedir}/${server.xml.schema.generate.dir}/${server.xml.schema.dest.file.name}" todir=".${server.xml.schema.copy.build.dir}"/>
+    <!-- MACCHINA -->
+    <copy file="${src.dir}/${macchina.jaxb.package.name}/${jaxb.index.file.name}" todir="${build.dir}/classes/${macchina.jaxb.package.name}"/>
+    <move file="${basedir}/${macchina.xml.schema.generate.dir}/${macchina.xml.schema.generate.file.name}" tofile="${basedir}/${macchina.xml.schema.generate.dir}/${macchina.xml.schema.dest.file.name}"/>
+    <copy file="${basedir}/${macchina.xml.schema.generate.dir}/${macchina.xml.schema.dest.file.name}" todir=".${macchina.xml.schema.copy.build.dir}"/>
+  </target> 
+    
+  <target name="show-classpath">
+    <echo message="${toString:classpath}" />
+  </target>
+    
+  <target name="schemagen-init" depends="init, init-jaxb">
+    <taskdef name="schemagen"
+            classname="com.sun.tools.jxc.SchemaGenTask">
+      <classpath refid="javaee.classpath"/> 
+    </taskdef>
+  </target>
+    
+  <target name="schemagen-generate" depends="schemagen-init">
+    <echo message="Generating schemas..." />
+    <schemagen destdir="${server.xml.schema.generate.dir}" fork="true">
+      <src path="${src.dir}/${server.jaxb.package.name}" />
+      <classpath refid="javaee.classpath"/>
+    </schemagen>
+    <schemagen destdir="${macchina.xml.schema.generate.dir}" fork="true">
+      <src path="${src.dir}/${macchina.jaxb.package.name}" />
+      <classpath refid="javaee.classpath"/>
+    </schemagen>
+  </target>
+  
+  <!--ESEMPIO DI TARGET CHE ESEGUE UNO SCRIPT SQL Modificare -->
+  <target name="db-geodetix-postgre-local-createdb"><!--Nome con cui invocare lo script -->
+    <echo message="Local Database Eurofleet on Postgres - Create DB" />
+    <property name="database.driver.file"           value="${sql.lib.dir}/postgresql-8.3-603.jdbc3.jar"/>
+    <property name="database.driver.classpath"      value="${database.driver.file}"/>
+    <sql
+      driver="org.postgresql.Driver"
+      userid="postgre" 
+      password="geodeveloper"
+      url="${local.postgre.jdbc.connection}"
+      onerror="stop"
+      autocommit="true" 
+      src="${sql.script.dir}/createDBGeodetix.sql" 
+      classpath="${database.driver.classpath}"
+      >
+    </sql>
+   
+  </target>
+  
+  <!-- ESEGUE SCRIPT SQL che prepara il db origamidb per il primo aggiornamento -->
+  <target name="db-mysql-origamidb-azzeradb"><!--Nome con cui invocare lo script -->
+    <echo message="Origamidb pronto per ricevere il primo aggiornamento" />
+    <property name="database.driver.file"           value="${lib.mysqldriver.dir}/mysql-connector-java-5.1.13-bin.jar"/>
+    <property name="database.driver.classpath"      value="${database.driver.file}"/>
+    <sql
+      driver="com.mysql.jdbc.Driver"
+      userid="root" 
+      password="iso1710"
+      url="${local.mysql.jdbc.connection}/${mysql.gdpa.macchina.dbname}"
+      onerror="stop"
+      autocommit="true" 
+      src="${sql.script.dir}/1_MacchinaAzzeraTutto.sql" 
+      classpath="${database.driver.classpath}"
+      >
+    </sql>
+    
+   
+  </target>
+  <!-- ESEGUE SCRIPT SQL che prepara il db serverdb per il primo aggiornamento e anche origamidb -->
+  <target name="db-mysql-serverdb-azzeradb" depends="db-mysql-origamidb-azzeradb" ><!--Nome con cui invocare lo script -->
+    <echo message="Serverdb pronto per inviare il primo aggiornamento" />
+    <property name="database.driver.file"           value="${lib.mysqldriver.dir}/mysql-connector-java-5.1.13-bin.jar"/>
+    <property name="database.driver.classpath"      value="${database.driver.file}"/>
+    <sql
+      driver="com.mysql.jdbc.Driver"
+      userid="root" 
+      password="iso1710"
+      url="${local.mysql.jdbc.connection}/${mysql.gdpa.server.dbname}"
+      onerror="stop"
+      autocommit="true" 
+      src="${sql.script.dir}/2_ServerAzzeraTutto.sql" 
+      classpath="${database.driver.classpath}"
+      >
+    </sql>
+  </target>   
+  
+  <!-- ESEGUE SCRIPT SQL che setta i valori iniziali dei parametri sing mac -->
+  <target name="db-mysql-macchina-setta-par-sing-mac"  ><!--Nome con cui invocare lo script -->
+    <echo message="La macchina ha settato la configurazione iniziale dei parametri sing mac" />
+    <property name="database.driver.file"           value="${lib.mysqldriver.dir}/mysql-connector-java-5.1.13-bin.jar"/>
+    <property name="database.driver.classpath"      value="${database.driver.file}"/>
+    <sql
+      driver="com.mysql.jdbc.Driver"
+      userid="root" 
+      password="iso1710"
+      url="${local.mysql.jdbc.connection}/${mysql.gdpa.macchina.dbname}"
+      onerror="stop"
+      autocommit="true" 
+      src="${sql.script.dir}/3_MacchinaSettaConfInizialeParSingMac.sql" 
+      classpath="${database.driver.classpath}"
+      >
+    </sql>
+  </target>
+  
+  <!-- ESEGUE SCRIPT SQL che modifica i record della tab parametro_comp_prod -->
+  <target name="db-mysql-server-modifica-par-comp-prod"  ><!--Nome con cui invocare lo script -->
+    <echo message="Parametro_comp_prod modificati!" />
+    <property name="database.driver.file"           value="${lib.mysqldriver.dir}/mysql-connector-java-5.1.13-bin.jar"/>
+    <property name="database.driver.classpath"      value="${database.driver.file}"/>
+    <sql
+      driver="com.mysql.jdbc.Driver"
+      userid="root" 
+      password="iso1710"
+      url="${local.mysql.jdbc.connection}/${mysql.gdpa.server.dbname}"
+      onerror="stop"
+      autocommit="true" 
+      src="${sql.script.dir}/ServerModificaParCompProd.sql" 
+      classpath="${database.driver.classpath}"
+      >
+    </sql>
+  </target>
+  
+  <!-- ESEGUE SCRIPT SQL che crea le mazzette_sing_mac ed i processi sulla macchinac -->
+  <target name="db-mysql-origamidb-crea-processi-mazz-sing-mac"  ><!--Nome con cui invocare lo script -->
+    <echo message="Processi creati! Mazzette singola macchina create su origamidb!" />
+    <property name="database.driver.file"           value="${lib.mysqldriver.dir}/mysql-connector-java-5.1.13-bin.jar"/>
+    <property name="database.driver.classpath"      value="${database.driver.file}"/>
+    <sql
+      driver="com.mysql.jdbc.Driver"
+      userid="root" 
+      password="iso1710"
+      url="${local.mysql.jdbc.connection}/${mysql.gdpa.macchina.dbname}"
+      onerror="stop"
+      autocommit="true" 
+      src="${sql.script.dir}/ImportaDatiFrancescoSuOrigamidb.sql" 
+      classpath="${database.driver.classpath}"
+      >
+    </sql>
+  </target>
+  
+  
+   <!--   
+   <target name="esegui-programma">
+    <echo message="dropdb -U${postgre.eurofleet.user} ${postgre.eurofleet.dbname} -W" />
+    <exec dir="${sql.dir}" executable="psqlq" os="Linux" >
+      <arg line="-U${postgre.eurofleet.user} ${postgre.eurofleet.dbname} -W"/>
+    </exec>
+  </target>
+  -->
+  
+  
+  
+  
+    
+    
+    
+    <!--
+
+    There exist several targets which are by default empty and which can be 
+    used for execution of your tasks. These targets are usually executed 
+    before and after some main targets. They are: 
+
+      -pre-init:                 called before initialization of project properties
+      -post-init:                called after initialization of project properties
+      -pre-compile:              called before javac compilation
+      -post-compile:             called after javac compilation
+      -pre-compile-single:       called before javac compilation of single file
+      -post-compile-single:      called after javac compilation of single file
+      -pre-compile-test:         called before javac compilation of JUnit tests
+      -post-compile-test:        called after javac compilation of JUnit tests
+      -pre-compile-test-single:  called before javac compilation of single JUnit test
+      -post-compile-test-single: called after javac compilation of single JUunit test
+      -pre-jar:                  called before JAR building
+      -post-jar:                 called after JAR building
+      -post-clean:               called after cleaning build products
+
+    (Targets beginning with '-' are not intended to be called on their own.)
+
+    Example of inserting an obfuscator after compilation could look like this:
+
+        <target name="-post-compile">
+            <obfuscate>
+                <fileset dir="${build.classes.dir}"/>
+            </obfuscate>
+        </target>
+
+    For list of available properties check the imported 
+    nbproject/build-impl.xml file. 
+
+
+    Another way to customize the build is by overriding existing main targets.
+    The targets of interest are: 
+
+      -init-macrodef-javac:     defines macro for javac compilation
+      -init-macrodef-junit:     defines macro for junit execution
+      -init-macrodef-debug:     defines macro for class debugging
+      -init-macrodef-java:      defines macro for class execution
+      -do-jar-with-manifest:    JAR building (if you are using a manifest)
+      -do-jar-without-manifest: JAR building (if you are not using a manifest)
+      run:                      execution of project 
+      -javadoc-build:           Javadoc generation
+      test-report:              JUnit report generation
+
+    An example of overriding the target for project execution could look like this:
+
+        <target name="run" depends="UpdateS2M-impl.jar">
+            <exec dir="bin" executable="launcher.exe">
+                <arg file="${dist.jar}"/>
+            </exec>
+        </target>
+
+    Notice that the overridden target depends on the jar target and not only on 
+    the compile target as the regular run target does. Again, for a list of available 
+    properties which you can use, check the target you are overriding in the
+    nbproject/build-impl.xml file. 
+
+    -->
+</project>

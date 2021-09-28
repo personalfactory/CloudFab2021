@@ -1,0 +1,935 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="aggiornamento" type="aggiornamento"/>
+
+  <xs:element name="aggiornamentoConfig" type="aggiornamentoConfig"/>
+
+  <xs:element name="allarme" type="allarme"/>
+
+  <xs:element name="anagrafeMacchina" type="anagrafeMacchina"/>
+
+  <xs:element name="anagrafeProdotto" type="anagrafeProdotto"/>
+
+  <xs:element name="bolla" type="bolla"/>
+
+  <xs:element name="categoria" type="categoria"/>
+
+  <xs:element name="chimica" type="chimica"/>
+
+  <xs:element name="ciclo" type="ciclo"/>
+
+  <xs:element name="cicloProcesso" type="cicloProcesso"/>
+
+  <xs:element name="codice" type="codice"/>
+
+  <xs:element name="colore" type="colore"/>
+
+  <xs:element name="coloreBase" type="coloreBase"/>
+
+  <xs:element name="componente" type="componente"/>
+
+  <xs:element name="componentePesatura" type="componentePesatura"/>
+
+  <xs:element name="componenteProdotto" type="componenteProdotto"/>
+
+  <xs:element name="comune" type="comune"/>
+
+  <xs:element name="dizionario" type="dizionario"/>
+
+  <xs:element name="dizionarioTipo" type="dizionarioTipo"/>
+
+  <xs:element name="figura" type="figura"/>
+
+  <xs:element name="figuraTipo" type="figuraTipo"/>
+
+  <xs:element name="gruppo" type="gruppo"/>
+
+  <xs:element name="lingua" type="lingua"/>
+
+  <xs:element name="lotto" type="lotto"/>
+
+  <xs:element name="macchina" type="macchina"/>
+
+  <xs:element name="mazzetta" type="mazzetta"/>
+
+  <xs:element name="mazzettaColSingMac" type="mazzettaColSingMac"/>
+
+  <xs:element name="mazzettaColorata" type="mazzettaColorata"/>
+
+  <xs:element name="messaggioMacchina" type="messaggioMacchina"/>
+
+  <xs:element name="movimentoSingMac" type="movimentoSingMac"/>
+
+  <xs:element name="numSacchetto" type="numSacchetto"/>
+
+  <xs:element name="ordineElenco" type="ordineElenco"/>
+
+  <xs:element name="ordineSingMac" type="ordineSingMac"/>
+
+  <xs:element name="parametroCompProd" type="parametroCompProd"/>
+
+  <xs:element name="parametroGlobMac" type="parametroGlobMac"/>
+
+  <xs:element name="parametroOrdine" type="parametroOrdine"/>
+
+  <xs:element name="parametroProd" type="parametroProd"/>
+
+  <xs:element name="parametroProdMac" type="parametroProdMac"/>
+
+  <xs:element name="parametroProdotto" type="parametroProdotto"/>
+
+  <xs:element name="parametroRipristino" type="parametroRipristino"/>
+
+  <xs:element name="parametroSacchetto" type="parametroSacchetto"/>
+
+  <xs:element name="parametroSingMac" type="parametroSingMac"/>
+
+  <xs:element name="presa" type="presa"/>
+
+  <xs:element name="processo" type="processo"/>
+
+  <xs:element name="prodotto" type="prodotto"/>
+
+  <xs:element name="valoreAllarme" type="valoreAllarme"/>
+
+  <xs:element name="valoreParComp" type="valoreParComp"/>
+
+  <xs:element name="valoreParOrdine" type="valoreParOrdine"/>
+
+  <xs:element name="valoreParProd" type="valoreParProd"/>
+
+  <xs:element name="valoreParProdMac" type="valoreParProdMac"/>
+
+  <xs:element name="valoreParSacchetto" type="valoreParSacchetto"/>
+
+  <xs:element name="valoreParSingMac" type="valoreParSingMac"/>
+
+  <xs:element name="valoreProdotto" type="valoreProdotto"/>
+
+  <xs:element name="valoreRipristino" type="valoreRipristino"/>
+
+  <xs:complexType name="aggiornamento">
+    <xs:sequence>
+      <xs:element name="daCancellare" type="xs:anyType" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="daInserire" type="xs:anyType" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="dtAggiornamento" type="xs:dateTime" minOccurs="0"/>
+      <xs:element name="id" type="xs:int" minOccurs="0"/>
+      <xs:element name="idMacchina" type="macchina" minOccurs="0"/>
+      <xs:element name="nomeFile" type="xs:string" minOccurs="0"/>
+      <xs:element name="tipo" type="xs:string" minOccurs="0"/>
+      <xs:element name="versione" type="xs:int" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="macchina">
+    <xs:sequence>
+      <xs:element name="abilitato" type="xs:boolean" minOccurs="0"/>
+      <xs:element name="codStab" type="xs:string" minOccurs="0"/>
+      <xs:element name="descriStab" type="xs:string" minOccurs="0"/>
+      <xs:element name="dtAbilitato" type="xs:dateTime" minOccurs="0"/>
+      <xs:element name="ftpPassword" type="xs:string" minOccurs="0"/>
+      <xs:element name="ftpUser" type="xs:string" minOccurs="0"/>
+      <xs:element name="idMacchina" type="xs:int" minOccurs="0"/>
+      <xs:element name="passOrigami" type="xs:string" minOccurs="0"/>
+      <xs:element name="passServer" type="xs:string" minOccurs="0"/>
+      <xs:element name="ragso1" type="xs:string" minOccurs="0"/>
+      <xs:element name="userOrigami" type="xs:string" minOccurs="0"/>
+      <xs:element name="userServer" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="aggiornamentoConfig">
+    <xs:sequence>
+      <xs:element name="abilitato" type="xs:boolean" minOccurs="0"/>
+      <xs:element name="descrizione" type="xs:string" minOccurs="0"/>
+      <xs:element name="dtAbilitato" type="xs:dateTime" minOccurs="0"/>
+      <xs:element name="id" type="xs:int" minOccurs="0"/>
+      <xs:element name="parametro" type="xs:string" minOccurs="0"/>
+      <xs:element name="tipo" type="xs:string" minOccurs="0"/>
+      <xs:element name="valore" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="allarme">
+    <xs:sequence>
+      <xs:element name="abilitato" type="xs:boolean" minOccurs="0"/>
+      <xs:element name="descrizione" type="xs:string" minOccurs="0"/>
+      <xs:element name="dtAbilitato" type="xs:dateTime" minOccurs="0"/>
+      <xs:element name="idAllarme" type="xs:int" minOccurs="0"/>
+      <xs:element name="info1" type="xs:string" minOccurs="0"/>
+      <xs:element name="info2" type="xs:string" minOccurs="0"/>
+      <xs:element name="info3" type="xs:string" minOccurs="0"/>
+      <xs:element name="info4" type="xs:string" minOccurs="0"/>
+      <xs:element name="info5" type="xs:string" minOccurs="0"/>
+      <xs:element name="nome" type="xs:string" minOccurs="0"/>
+      <xs:element name="tabellaRiferimento" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="anagrafeMacchina">
+    <xs:sequence>
+      <xs:element name="abilitato" type="xs:boolean" minOccurs="0"/>
+      <xs:element name="dtAbilitato" type="xs:dateTime" minOccurs="0"/>
+      <xs:element name="geografico" type="xs:string" minOccurs="0"/>
+      <xs:element name="gruppo" type="xs:string" minOccurs="0"/>
+      <xs:element name="idAnMac" type="xs:int" minOccurs="0"/>
+      <xs:element name="idClienteGaz" type="xs:int" minOccurs="0"/>
+      <xs:element name="idLingua" type="lingua" minOccurs="0"/>
+      <xs:element name="idMacchina" type="macchina" minOccurs="0"/>
+      <xs:element name="livelloGruppo" type="xs:string" minOccurs="0"/>
+      <xs:element name="tipoRiferimento" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="lingua">
+    <xs:sequence>
+      <xs:element name="abilitato" type="xs:boolean" minOccurs="0"/>
+      <xs:element name="dtAbilitato" type="xs:dateTime" minOccurs="0"/>
+      <xs:element name="idLingua" type="xs:int" minOccurs="0"/>
+      <xs:element name="lingua" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="anagrafeProdotto">
+    <xs:sequence>
+      <xs:element name="abilitato" type="xs:boolean" minOccurs="0"/>
+      <xs:element name="colorato" type="xs:string" minOccurs="0"/>
+      <xs:element name="dtAbilitato" type="xs:dateTime" minOccurs="0"/>
+      <xs:element name="fascia" type="xs:string" minOccurs="0"/>
+      <xs:element name="fattoreDiv" type="xs:string" minOccurs="0"/>
+      <xs:element name="geografico" type="xs:string" minOccurs="0"/>
+      <xs:element name="gruppo" type="xs:string" minOccurs="0"/>
+      <xs:element name="idAnProd" type="xs:int" minOccurs="0"/>
+      <xs:element name="idCat" type="categoria" minOccurs="0"/>
+      <xs:element name="idCodice" type="codice" minOccurs="0"/>
+      <xs:element name="idMazzetta" type="mazzetta" minOccurs="0"/>
+      <xs:element name="idProdotto" type="prodotto" minOccurs="0"/>
+      <xs:element name="limColore" type="xs:string" minOccurs="0"/>
+      <xs:element name="livelloGruppo" type="xs:string" minOccurs="0"/>
+      <xs:element name="tipoRiferimento" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="categoria">
+    <xs:sequence>
+      <xs:element name="abilitato" type="xs:boolean" minOccurs="0"/>
+      <xs:element name="descriCategoria" type="xs:string" minOccurs="0"/>
+      <xs:element name="dtAbilitato" type="xs:dateTime" minOccurs="0"/>
+      <xs:element name="idCat" type="xs:int" minOccurs="0"/>
+      <xs:element name="nomeCategoria" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="codice">
+    <xs:sequence>
+      <xs:element name="abilitato" type="xs:boolean" minOccurs="0"/>
+      <xs:element name="descrizione" type="xs:string" minOccurs="0"/>
+      <xs:element name="dtAbilitato" type="xs:dateTime" minOccurs="0"/>
+      <xs:element name="idCodice" type="xs:int" minOccurs="0"/>
+      <xs:element name="tipoCodice" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="mazzetta">
+    <xs:sequence>
+      <xs:element name="abilitato" type="xs:boolean" minOccurs="0"/>
+      <xs:element name="codMazzetta" type="xs:string" minOccurs="0"/>
+      <xs:element name="dtAbilitato" type="xs:dateTime" minOccurs="0"/>
+      <xs:element name="idMazzetta" type="xs:int" minOccurs="0"/>
+      <xs:element name="nomeMazzetta" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="prodotto">
+    <xs:sequence>
+      <xs:element name="abilitato" type="xs:boolean" minOccurs="0"/>
+      <xs:element name="codProdotto" type="xs:string" minOccurs="0"/>
+      <xs:element name="dtAbilitato" type="xs:dateTime" minOccurs="0"/>
+      <xs:element name="idProdotto" type="xs:int" minOccurs="0"/>
+      <xs:element name="info1" type="xs:string" minOccurs="0"/>
+      <xs:element name="info10" type="xs:string" minOccurs="0"/>
+      <xs:element name="info2" type="xs:string" minOccurs="0"/>
+      <xs:element name="info3" type="xs:string" minOccurs="0"/>
+      <xs:element name="info4" type="xs:string" minOccurs="0"/>
+      <xs:element name="info5" type="xs:string" minOccurs="0"/>
+      <xs:element name="info6" type="xs:string" minOccurs="0"/>
+      <xs:element name="info7" type="xs:string" minOccurs="0"/>
+      <xs:element name="info8" type="xs:string" minOccurs="0"/>
+      <xs:element name="info9" type="xs:string" minOccurs="0"/>
+      <xs:element name="nomeProdotto" type="xs:string" minOccurs="0"/>
+      <xs:element name="serieAdditivo" type="xs:string" minOccurs="0"/>
+      <xs:element name="serieColore" type="xs:string" minOccurs="0"/>
+      <xs:element name="tipo" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="bolla">
+    <xs:sequence>
+      <xs:element name="codStab" type="xs:string" minOccurs="0"/>
+      <xs:element name="dtAbilitato" type="xs:dateTime" minOccurs="0"/>
+      <xs:element name="dtBolla" type="xs:dateTime" minOccurs="0"/>
+      <xs:element name="idBolla" type="xs:int" minOccurs="0"/>
+      <xs:element name="idMacchina" type="macchina" minOccurs="0"/>
+      <xs:element name="numBolla" type="xs:int" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="chimica">
+    <xs:sequence>
+      <xs:element name="codChimica" type="xs:string" minOccurs="0"/>
+      <xs:element name="codLotto" type="lotto" minOccurs="0"/>
+      <xs:element name="codProdotto" type="xs:string" minOccurs="0"/>
+      <xs:element name="data" type="xs:string" minOccurs="0"/>
+      <xs:element name="descriFormula" type="xs:string" minOccurs="0"/>
+      <xs:element name="dtAbilitato" type="xs:dateTime" minOccurs="0"/>
+      <xs:element name="idChimica" type="xs:int" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="lotto">
+    <xs:sequence>
+      <xs:element name="codLotto" type="xs:string" minOccurs="0"/>
+      <xs:element name="descriLotto" type="xs:string" minOccurs="0"/>
+      <xs:element name="dtBolla" type="xs:dateTime" minOccurs="0"/>
+      <xs:element name="dtLotto" type="xs:dateTime" minOccurs="0"/>
+      <xs:element name="idBolla" type="bolla" minOccurs="0"/>
+      <xs:element name="numBolla" type="xs:string" minOccurs="0"/>
+      <xs:element name="parent" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="ciclo">
+    <xs:sequence>
+      <xs:element name="ariaCondScarico" type="xs:string" minOccurs="0"/>
+      <xs:element name="ariaInternoValvola" type="xs:string" minOccurs="0"/>
+      <xs:element name="ariaPulisciValvola" type="xs:string" minOccurs="0"/>
+      <xs:element name="dtAbilitato" type="xs:dateTime" minOccurs="0"/>
+      <xs:element name="dtAggiornamento" type="xs:dateTime" minOccurs="0"/>
+      <xs:element name="dtFineCiclo" type="xs:dateTime" minOccurs="0"/>
+      <xs:element name="dtInizioCiclo" type="xs:dateTime" minOccurs="0"/>
+      <xs:element name="id" type="xs:int" minOccurs="0"/>
+      <xs:element name="idCat" type="xs:int" minOccurs="0"/>
+      <xs:element name="idCiclo" type="xs:int" minOccurs="0"/>
+      <xs:element name="idMacchina" type="xs:int" minOccurs="0"/>
+      <xs:element name="idOrdine" type="xs:int" minOccurs="0"/>
+      <xs:element name="idProdotto" type="xs:int" minOccurs="0"/>
+      <xs:element name="idSerieAdditivo" type="xs:string" minOccurs="0"/>
+      <xs:element name="idSerieColore" type="xs:string" minOccurs="0"/>
+      <xs:element name="info1" type="xs:string" minOccurs="0"/>
+      <xs:element name="info10" type="xs:string" minOccurs="0"/>
+      <xs:element name="info2" type="xs:string" minOccurs="0"/>
+      <xs:element name="info3" type="xs:string" minOccurs="0"/>
+      <xs:element name="info4" type="xs:string" minOccurs="0"/>
+      <xs:element name="info5" type="xs:string" minOccurs="0"/>
+      <xs:element name="info6" type="xs:string" minOccurs="0"/>
+      <xs:element name="info7" type="xs:string" minOccurs="0"/>
+      <xs:element name="info8" type="xs:string" minOccurs="0"/>
+      <xs:element name="info9" type="xs:string" minOccurs="0"/>
+      <xs:element name="numSacchi" type="xs:int" minOccurs="0"/>
+      <xs:element name="numSacchiAggiuntivi" type="xs:int" minOccurs="0"/>
+      <xs:element name="tempoMix" type="xs:int" minOccurs="0"/>
+      <xs:element name="tipoCiclo" type="xs:string" minOccurs="0"/>
+      <xs:element name="velocitaMix" type="xs:int" minOccurs="0"/>
+      <xs:element name="vibroAttivo" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="cicloProcesso">
+    <xs:sequence>
+      <xs:element name="dtAbilitato" type="xs:dateTime" minOccurs="0"/>
+      <xs:element name="dtAggiornamento" type="xs:dateTime" minOccurs="0"/>
+      <xs:element name="dtFineProcesso" type="xs:dateTime" minOccurs="0"/>
+      <xs:element name="dtInizioProcesso" type="xs:dateTime" minOccurs="0"/>
+      <xs:element name="id" type="xs:int" minOccurs="0"/>
+      <xs:element name="idCiclo" type="xs:int" minOccurs="0"/>
+      <xs:element name="idMacchina" type="xs:int" minOccurs="0"/>
+      <xs:element name="idProcesso" type="xs:int" minOccurs="0"/>
+      <xs:element name="info1" type="xs:string" minOccurs="0"/>
+      <xs:element name="info10" type="xs:string" minOccurs="0"/>
+      <xs:element name="info2" type="xs:string" minOccurs="0"/>
+      <xs:element name="info3" type="xs:string" minOccurs="0"/>
+      <xs:element name="info4" type="xs:string" minOccurs="0"/>
+      <xs:element name="info5" type="xs:string" minOccurs="0"/>
+      <xs:element name="info6" type="xs:string" minOccurs="0"/>
+      <xs:element name="info7" type="xs:string" minOccurs="0"/>
+      <xs:element name="info8" type="xs:string" minOccurs="0"/>
+      <xs:element name="info9" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="colore">
+    <xs:sequence>
+      <xs:element name="abilitato" type="xs:boolean" minOccurs="0"/>
+      <xs:element name="codColore" type="xs:string" minOccurs="0"/>
+      <xs:element name="dtAbilitato" type="xs:dateTime" minOccurs="0"/>
+      <xs:element name="idColore" type="xs:int" minOccurs="0"/>
+      <xs:element name="nomeColore" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="coloreBase">
+    <xs:sequence>
+      <xs:element name="abilitato" type="xs:boolean" minOccurs="0"/>
+      <xs:element name="codColoreBase" type="xs:string" minOccurs="0"/>
+      <xs:element name="costoColoreBase" type="xs:double" minOccurs="0"/>
+      <xs:element name="dtAbilitato" type="xs:dateTime" minOccurs="0"/>
+      <xs:element name="idColoreBase" type="xs:int" minOccurs="0"/>
+      <xs:element name="nomeColoreBase" type="xs:string" minOccurs="0"/>
+      <xs:element name="tollPerc" type="xs:double" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="componente">
+    <xs:sequence>
+      <xs:element name="abilitato" type="xs:boolean" minOccurs="0"/>
+      <xs:element name="codComponente" type="xs:string" minOccurs="0"/>
+      <xs:element name="descriComponente" type="xs:string" minOccurs="0"/>
+      <xs:element name="dtAbilitato" type="xs:dateTime" minOccurs="0"/>
+      <xs:element name="idComp" type="xs:int" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="componentePesatura">
+    <xs:sequence>
+      <xs:element name="abilitato" type="xs:boolean" minOccurs="0"/>
+      <xs:element name="dtAbilitato" type="xs:dateTime" minOccurs="0"/>
+      <xs:element name="fluidificazione" type="xs:string" minOccurs="0"/>
+      <xs:element name="id" type="xs:int" minOccurs="0"/>
+      <xs:element name="idComp" type="xs:int" minOccurs="0"/>
+      <xs:element name="idProdotto" type="xs:int" minOccurs="0"/>
+      <xs:element name="info1" type="xs:string" minOccurs="0"/>
+      <xs:element name="info10" type="xs:string" minOccurs="0"/>
+      <xs:element name="info2" type="xs:string" minOccurs="0"/>
+      <xs:element name="info3" type="xs:string" minOccurs="0"/>
+      <xs:element name="info4" type="xs:string" minOccurs="0"/>
+      <xs:element name="info5" type="xs:string" minOccurs="0"/>
+      <xs:element name="info6" type="xs:string" minOccurs="0"/>
+      <xs:element name="info7" type="xs:string" minOccurs="0"/>
+      <xs:element name="info8" type="xs:string" minOccurs="0"/>
+      <xs:element name="info9" type="xs:string" minOccurs="0"/>
+      <xs:element name="metodoPesa" type="xs:string" minOccurs="0"/>
+      <xs:element name="note" type="xs:string" minOccurs="0"/>
+      <xs:element name="ordineDosaggio" type="xs:int" minOccurs="0"/>
+      <xs:element name="quantita" type="xs:int" minOccurs="0"/>
+      <xs:element name="stepDosaggio" type="xs:string" minOccurs="0"/>
+      <xs:element name="tempoMix" type="xs:string" minOccurs="0"/>
+      <xs:element name="tollDifetto" type="xs:int" minOccurs="0"/>
+      <xs:element name="tollEccesso" type="xs:int" minOccurs="0"/>
+      <xs:element name="valoreResiduoFluidificazione" type="xs:int" minOccurs="0"/>
+      <xs:element name="velocitaMix" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="componenteProdotto">
+    <xs:sequence>
+      <xs:element name="abilitato" type="xs:boolean" minOccurs="0"/>
+      <xs:element name="dtAbilitato" type="xs:dateTime" minOccurs="0"/>
+      <xs:element name="idComp" type="componente" minOccurs="0"/>
+      <xs:element name="idCompProd" type="xs:int" minOccurs="0"/>
+      <xs:element name="idProdotto" type="prodotto" minOccurs="0"/>
+      <xs:element name="quantita" type="xs:double" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="comune">
+    <xs:sequence>
+      <xs:element name="abilitato" type="xs:boolean" minOccurs="0"/>
+      <xs:element name="cap" type="xs:string" minOccurs="0"/>
+      <xs:element name="codCat" type="xs:string" minOccurs="0"/>
+      <xs:element name="codIstat" type="xs:string" minOccurs="0"/>
+      <xs:element name="codProv" type="xs:string" minOccurs="0"/>
+      <xs:element name="codReg" type="xs:string" minOccurs="0"/>
+      <xs:element name="codStat" type="xs:string" minOccurs="0"/>
+      <xs:element name="comune" type="xs:string" minOccurs="0"/>
+      <xs:element name="continente" type="xs:string" minOccurs="0"/>
+      <xs:element name="dtAbilitato" type="xs:dateTime" minOccurs="0"/>
+      <xs:element name="idComune" type="xs:int" minOccurs="0"/>
+      <xs:element name="mondo" type="xs:string" minOccurs="0"/>
+      <xs:element name="provincia" type="xs:string" minOccurs="0"/>
+      <xs:element name="regione" type="xs:string" minOccurs="0"/>
+      <xs:element name="stato" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="dizionario">
+    <xs:sequence>
+      <xs:element name="abilitato" type="xs:boolean" minOccurs="0"/>
+      <xs:element name="dtAbilitato" type="xs:dateTime" minOccurs="0"/>
+      <xs:element name="idDizTipo" type="dizionarioTipo" minOccurs="0"/>
+      <xs:element name="idDizionario" type="xs:int" minOccurs="0"/>
+      <xs:element name="idLingua" type="lingua" minOccurs="0"/>
+      <xs:element name="idVocabolo" type="xs:int" minOccurs="0"/>
+      <xs:element name="vocabolo" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="dizionarioTipo">
+    <xs:sequence>
+      <xs:element name="abilitato" type="xs:boolean" minOccurs="0"/>
+      <xs:element name="dizionarioTipo" type="xs:string" minOccurs="0"/>
+      <xs:element name="dtAbilitato" type="xs:dateTime" minOccurs="0"/>
+      <xs:element name="idDizTipo" type="xs:int" minOccurs="0"/>
+      <xs:element name="tabella" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="figura">
+    <xs:sequence>
+      <xs:element name="abilitato" type="xs:boolean" minOccurs="0"/>
+      <xs:element name="codice" type="xs:string" minOccurs="0"/>
+      <xs:element name="dtAbilitato" type="xs:dateTime" minOccurs="0"/>
+      <xs:element name="geografico" type="xs:string" minOccurs="0"/>
+      <xs:element name="gruppo" type="xs:string" minOccurs="0"/>
+      <xs:element name="idAzienda" type="xs:int" minOccurs="0"/>
+      <xs:element name="idFigura" type="xs:int" minOccurs="0"/>
+      <xs:element name="idFiguraTipo" type="figuraTipo" minOccurs="0"/>
+      <xs:element name="idUtente" type="xs:int" minOccurs="0"/>
+      <xs:element name="livelloGruppo" type="xs:string" minOccurs="0"/>
+      <xs:element name="nominativo" type="xs:string" minOccurs="0"/>
+      <xs:element name="tipoRiferimento" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="figuraTipo">
+    <xs:sequence>
+      <xs:element name="abilitato" type="xs:boolean" minOccurs="0"/>
+      <xs:element name="dtAbilitato" type="xs:dateTime" minOccurs="0"/>
+      <xs:element name="figura" type="xs:string" minOccurs="0"/>
+      <xs:element name="idFiguraTipo" type="xs:int" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="gruppo">
+    <xs:sequence>
+      <xs:element name="abilitato" type="xs:boolean" minOccurs="0"/>
+      <xs:element name="dtAbilitato" type="xs:dateTime" minOccurs="0"/>
+      <xs:element name="idGruppo" type="xs:int" minOccurs="0"/>
+      <xs:element name="livello1" type="xs:string" minOccurs="0"/>
+      <xs:element name="livello2" type="xs:string" minOccurs="0"/>
+      <xs:element name="livello3" type="xs:string" minOccurs="0"/>
+      <xs:element name="livello4" type="xs:string" minOccurs="0"/>
+      <xs:element name="livello5" type="xs:string" minOccurs="0"/>
+      <xs:element name="livello6" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="mazzettaColSingMac">
+    <xs:sequence>
+      <xs:element name="abilitato" type="xs:boolean" minOccurs="0"/>
+      <xs:element name="codColore" type="xs:string" minOccurs="0"/>
+      <xs:element name="dtAbilitato" type="xs:dateTime" minOccurs="0"/>
+      <xs:element name="dtCreazioneMac" type="xs:dateTime" minOccurs="0"/>
+      <xs:element name="idColoreBase" type="coloreBase" minOccurs="0"/>
+      <xs:element name="idMazzetta" type="mazzetta" minOccurs="0"/>
+      <xs:element name="mazzettaColSingMacPK" type="mazzettaColSingMacPK" minOccurs="0"/>
+      <xs:element name="quantita" type="xs:int" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="mazzettaColSingMacPK">
+    <xs:sequence>
+      <xs:element name="idMacchina" type="xs:int"/>
+      <xs:element name="idMazSingMac" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="mazzettaColorata">
+    <xs:sequence>
+      <xs:element name="abilitato" type="xs:boolean" minOccurs="0"/>
+      <xs:element name="dtAbilitato" type="xs:dateTime" minOccurs="0"/>
+      <xs:element name="idColore" type="colore" minOccurs="0"/>
+      <xs:element name="idColoreBase" type="coloreBase" minOccurs="0"/>
+      <xs:element name="idMazCol" type="xs:int" minOccurs="0"/>
+      <xs:element name="idMazzetta" type="mazzetta" minOccurs="0"/>
+      <xs:element name="quantita" type="xs:int" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="messaggioMacchina">
+    <xs:sequence>
+      <xs:element name="abilitato" type="xs:boolean" minOccurs="0"/>
+      <xs:element name="dtAbilitato" type="xs:dateTime" minOccurs="0"/>
+      <xs:element name="idMessaggio" type="xs:int" minOccurs="0"/>
+      <xs:element name="messaggio" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="movimentoSingMac">
+    <xs:sequence>
+      <xs:element name="abilitato" type="xs:boolean" minOccurs="0"/>
+      <xs:element name="codIngressoComp" type="xs:string" minOccurs="0"/>
+      <xs:element name="codOperatore" type="xs:string" minOccurs="0"/>
+      <xs:element name="codiceCe" type="xs:string" minOccurs="0"/>
+      <xs:element name="consulenteTecnico" type="xs:string" minOccurs="0"/>
+      <xs:element name="descriMov" type="xs:string" minOccurs="0"/>
+      <xs:element name="dtAbilitato" type="xs:dateTime" minOccurs="0"/>
+      <xs:element name="dtDoc" type="xs:dateTime" minOccurs="0"/>
+      <xs:element name="dtFineProcedura" type="xs:dateTime" minOccurs="0"/>
+      <xs:element name="dtInizioProcedura" type="xs:dateTime" minOccurs="0"/>
+      <xs:element name="dtMov" type="xs:dateTime" minOccurs="0"/>
+      <xs:element name="fornitore" type="xs:string" minOccurs="0"/>
+      <xs:element name="idCiclo" type="xs:int" minOccurs="0"/>
+      <xs:element name="idMacchina" type="xs:int" minOccurs="0"/>
+      <xs:element name="idMateriale" type="xs:int" minOccurs="0"/>
+      <xs:element name="idMovInephos" type="xs:int" minOccurs="0"/>
+      <xs:element name="idMovOri" type="xs:int" minOccurs="0"/>
+      <xs:element name="info1" type="xs:string" minOccurs="0"/>
+      <xs:element name="info10" type="xs:string" minOccurs="0"/>
+      <xs:element name="info2" type="xs:string" minOccurs="0"/>
+      <xs:element name="info3" type="xs:string" minOccurs="0"/>
+      <xs:element name="info4" type="xs:string" minOccurs="0"/>
+      <xs:element name="info5" type="xs:string" minOccurs="0"/>
+      <xs:element name="info6" type="xs:string" minOccurs="0"/>
+      <xs:element name="info7" type="xs:string" minOccurs="0"/>
+      <xs:element name="info8" type="xs:string" minOccurs="0"/>
+      <xs:element name="info9" type="xs:string" minOccurs="0"/>
+      <xs:element name="marchioCeConforme" type="xs:string" minOccurs="0"/>
+      <xs:element name="merceConforme" type="xs:string" minOccurs="0"/>
+      <xs:element name="note" type="xs:string" minOccurs="0"/>
+      <xs:element name="numDoc" type="xs:string" minOccurs="0"/>
+      <xs:element name="numeroConfezioni" type="xs:int" minOccurs="0"/>
+      <xs:element name="operazione" type="xs:string" minOccurs="0"/>
+      <xs:element name="origineMov" type="xs:string" minOccurs="0"/>
+      <xs:element name="pesoConfezione" type="xs:double" minOccurs="0"/>
+      <xs:element name="pesoTeorico" type="xs:int" minOccurs="0"/>
+      <xs:element name="proceduraAdottata" type="xs:string" minOccurs="0"/>
+      <xs:element name="quantita" type="xs:int" minOccurs="0"/>
+      <xs:element name="responsabileProduzione" type="xs:string" minOccurs="0"/>
+      <xs:element name="responsabileQualita" type="xs:string" minOccurs="0"/>
+      <xs:element name="silo" type="xs:string" minOccurs="0"/>
+      <xs:element name="stabilitaConforme" type="xs:string" minOccurs="0"/>
+      <xs:element name="tipoConfezione" type="xs:string" minOccurs="0"/>
+      <xs:element name="tipoMateriale" type="xs:string" minOccurs="0"/>
+      <xs:element name="tipoMov" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="numSacchetto">
+    <xs:sequence>
+      <xs:element name="abilitato" type="xs:boolean" minOccurs="0"/>
+      <xs:element name="dtAbilitato" type="xs:dateTime" minOccurs="0"/>
+      <xs:element name="idCat" type="categoria" minOccurs="0"/>
+      <xs:element name="idNumSac" type="xs:int" minOccurs="0"/>
+      <xs:element name="numSacchetti" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="ordineElenco">
+    <xs:sequence>
+      <xs:element name="abilitato" type="xs:boolean" minOccurs="0"/>
+      <xs:element name="costo" type="xs:double" minOccurs="0"/>
+      <xs:element name="descriStato" type="xs:string" minOccurs="0"/>
+      <xs:element name="dtAbilitato" type="xs:dateTime" minOccurs="0"/>
+      <xs:element name="dtOrdine" type="xs:dateTime" minOccurs="0"/>
+      <xs:element name="dtProgrammata" type="xs:dateTime" minOccurs="0"/>
+      <xs:element name="idAzienda" type="xs:int" minOccurs="0"/>
+      <xs:element name="idMacchina" type="xs:int" minOccurs="0"/>
+      <xs:element name="idOrdine" type="xs:int" minOccurs="0"/>
+      <xs:element name="idUtente" type="xs:int" minOccurs="0"/>
+      <xs:element name="note" type="xs:string" minOccurs="0"/>
+      <xs:element name="stato" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="ordineSingMac">
+    <xs:sequence>
+      <xs:element name="abilitato" type="xs:boolean" minOccurs="0"/>
+      <xs:element name="contatore" type="xs:int" minOccurs="0"/>
+      <xs:element name="descriStato" type="xs:string" minOccurs="0"/>
+      <xs:element name="dtAbilitato" type="xs:dateTime" minOccurs="0"/>
+      <xs:element name="dtProduzione" type="xs:dateTime" minOccurs="0"/>
+      <xs:element name="dtProgrammata" type="xs:dateTime" minOccurs="0"/>
+      <xs:element name="idOrdine" type="ordineElenco" minOccurs="0"/>
+      <xs:element name="idOrdineSm" type="xs:int" minOccurs="0"/>
+      <xs:element name="idProdotto" type="xs:int" minOccurs="0"/>
+      <xs:element name="info1" type="xs:string" minOccurs="0"/>
+      <xs:element name="info10" type="xs:string" minOccurs="0"/>
+      <xs:element name="info2" type="xs:string" minOccurs="0"/>
+      <xs:element name="info3" type="xs:string" minOccurs="0"/>
+      <xs:element name="info4" type="xs:string" minOccurs="0"/>
+      <xs:element name="info5" type="xs:string" minOccurs="0"/>
+      <xs:element name="info6" type="xs:string" minOccurs="0"/>
+      <xs:element name="info7" type="xs:string" minOccurs="0"/>
+      <xs:element name="info8" type="xs:string" minOccurs="0"/>
+      <xs:element name="info9" type="xs:string" minOccurs="0"/>
+      <xs:element name="kgPezzo" type="xs:double" minOccurs="0"/>
+      <xs:element name="numPezzi" type="xs:int" minOccurs="0"/>
+      <xs:element name="ordineProduzione" type="xs:int" minOccurs="0"/>
+      <xs:element name="stato" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="parametroCompProd">
+    <xs:sequence>
+      <xs:element name="abilitato" type="xs:boolean" minOccurs="0"/>
+      <xs:element name="descriVariabile" type="xs:string" minOccurs="0"/>
+      <xs:element name="dtAbilitato" type="xs:dateTime" minOccurs="0"/>
+      <xs:element name="idParComp" type="xs:int" minOccurs="0"/>
+      <xs:element name="nomeVariabile" type="xs:string" minOccurs="0"/>
+      <xs:element name="valoreBase" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="parametroGlobMac">
+    <xs:sequence>
+      <xs:element name="abilitato" type="xs:boolean" minOccurs="0"/>
+      <xs:element name="descriVariabile" type="xs:string" minOccurs="0"/>
+      <xs:element name="dtAbilitato" type="xs:dateTime" minOccurs="0"/>
+      <xs:element name="idParGm" type="xs:int" minOccurs="0"/>
+      <xs:element name="nomeVariabile" type="xs:string" minOccurs="0"/>
+      <xs:element name="valoreVariabile" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="parametroOrdine">
+    <xs:sequence>
+      <xs:element name="abilitato" type="xs:boolean" minOccurs="0"/>
+      <xs:element name="descrizione" type="xs:string" minOccurs="0"/>
+      <xs:element name="dtAbilitato" type="xs:dateTime" minOccurs="0"/>
+      <xs:element name="idParOrdine" type="xs:int" minOccurs="0"/>
+      <xs:element name="nome" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="parametroProd">
+    <xs:sequence>
+      <xs:element name="abilitato" type="xs:int" minOccurs="0"/>
+      <xs:element name="descriVariabile" type="xs:string" minOccurs="0"/>
+      <xs:element name="dtAbilitato" type="xs:dateTime" minOccurs="0"/>
+      <xs:element name="idParProd" type="xs:int" minOccurs="0"/>
+      <xs:element name="nomeVariabile" type="xs:string" minOccurs="0"/>
+      <xs:element name="valoreBase" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="parametroProdMac">
+    <xs:sequence>
+      <xs:element name="abilitato" type="xs:boolean" minOccurs="0"/>
+      <xs:element name="descriVariabile" type="xs:string" minOccurs="0"/>
+      <xs:element name="dtAbilitato" type="xs:dateTime" minOccurs="0"/>
+      <xs:element name="idParPm" type="xs:int" minOccurs="0"/>
+      <xs:element name="nomeVariabile" type="xs:string" minOccurs="0"/>
+      <xs:element name="valoreBase" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="parametroProdotto">
+    <xs:sequence>
+      <xs:element name="abilitato" type="xs:int" minOccurs="0"/>
+      <xs:element name="descriVariabile" type="xs:string" minOccurs="0"/>
+      <xs:element name="dtAbilitato" type="xs:dateTime" minOccurs="0"/>
+      <xs:element name="idParProd" type="xs:int" minOccurs="0"/>
+      <xs:element name="nomeVariabile" type="xs:string" minOccurs="0"/>
+      <xs:element name="valoreBase" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="parametroRipristino">
+    <xs:sequence>
+      <xs:element name="abilitato" type="xs:boolean" minOccurs="0"/>
+      <xs:element name="descriVariabile" type="xs:string" minOccurs="0"/>
+      <xs:element name="dtAbilitato" type="xs:dateTime" minOccurs="0"/>
+      <xs:element name="idParRipristino" type="xs:int" minOccurs="0"/>
+      <xs:element name="nomeVariabile" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="parametroSacchetto">
+    <xs:sequence>
+      <xs:element name="abilitato" type="xs:boolean" minOccurs="0"/>
+      <xs:element name="descriVariabile" type="xs:string" minOccurs="0"/>
+      <xs:element name="dtAbilitato" type="xs:dateTime" minOccurs="0"/>
+      <xs:element name="idParSac" type="xs:int" minOccurs="0"/>
+      <xs:element name="nomeVariabile" type="xs:string" minOccurs="0"/>
+      <xs:element name="valoreBase" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="parametroSingMac">
+    <xs:sequence>
+      <xs:element name="abilitato" type="xs:boolean" minOccurs="0"/>
+      <xs:element name="descriVariabile" type="xs:string" minOccurs="0"/>
+      <xs:element name="dtAbilitato" type="xs:dateTime" minOccurs="0"/>
+      <xs:element name="idParSm" type="xs:int" minOccurs="0"/>
+      <xs:element name="nomeVariabile" type="xs:string" minOccurs="0"/>
+      <xs:element name="valoreBase" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="presa">
+    <xs:sequence>
+      <xs:element name="abilitato" type="xs:boolean" minOccurs="0"/>
+      <xs:element name="dtAbilitato" type="xs:dateTime" minOccurs="0"/>
+      <xs:element name="idPresa" type="xs:int" minOccurs="0"/>
+      <xs:element name="presa" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="processo">
+    <xs:sequence>
+      <xs:element name="cliente" type="xs:string" minOccurs="0"/>
+      <xs:element name="codChimica" type="xs:string" minOccurs="0"/>
+      <xs:element name="codColore" type="xs:string" minOccurs="0"/>
+      <xs:element name="codCompIn" type="xs:string" minOccurs="0"/>
+      <xs:element name="codCompPeso" type="xs:string" minOccurs="0"/>
+      <xs:element name="codOperatore" type="xs:string" minOccurs="0"/>
+      <xs:element name="codProdotto" type="xs:string" minOccurs="0"/>
+      <xs:element name="codSacco" type="xs:string" minOccurs="0"/>
+      <xs:element name="descriStab" type="xs:string" minOccurs="0"/>
+      <xs:element name="dtAbilitato" type="xs:dateTime" minOccurs="0"/>
+      <xs:element name="dtProduzioneMac" type="xs:dateTime" minOccurs="0"/>
+      <xs:element name="idMacchina" type="macchina" minOccurs="0"/>
+      <xs:element name="info1" type="xs:string" minOccurs="0"/>
+      <xs:element name="info10" type="xs:string" minOccurs="0"/>
+      <xs:element name="info2" type="xs:string" minOccurs="0"/>
+      <xs:element name="info3" type="xs:string" minOccurs="0"/>
+      <xs:element name="info4" type="xs:string" minOccurs="0"/>
+      <xs:element name="info5" type="xs:string" minOccurs="0"/>
+      <xs:element name="info6" type="xs:string" minOccurs="0"/>
+      <xs:element name="info7" type="xs:string" minOccurs="0"/>
+      <xs:element name="info8" type="xs:string" minOccurs="0"/>
+      <xs:element name="info9" type="xs:string" minOccurs="0"/>
+      <xs:element name="pesoRealeSacco" type="xs:int" minOccurs="0"/>
+      <xs:element name="processoPK" type="processoPK" minOccurs="0"/>
+      <xs:element name="tipoProcesso" type="xs:int" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="processoPK">
+    <xs:sequence>
+      <xs:element name="codStab" type="xs:string" minOccurs="0"/>
+      <xs:element name="idProcesso" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="valoreAllarme">
+    <xs:sequence>
+      <xs:element name="abilitato" type="xs:boolean" minOccurs="0"/>
+      <xs:element name="dtAbilitato" type="xs:dateTime" minOccurs="0"/>
+      <xs:element name="id" type="xs:int" minOccurs="0"/>
+      <xs:element name="idAllarme" type="allarme" minOccurs="0"/>
+      <xs:element name="idMacchina" type="xs:int" minOccurs="0"/>
+      <xs:element name="idTabellaRif" type="xs:int" minOccurs="0"/>
+      <xs:element name="info1" type="xs:string" minOccurs="0"/>
+      <xs:element name="info2" type="xs:string" minOccurs="0"/>
+      <xs:element name="info3" type="xs:string" minOccurs="0"/>
+      <xs:element name="info4" type="xs:string" minOccurs="0"/>
+      <xs:element name="info5" type="xs:string" minOccurs="0"/>
+      <xs:element name="valore" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="valoreParComp">
+    <xs:sequence>
+      <xs:element name="abilitato" type="xs:boolean" minOccurs="0"/>
+      <xs:element name="dtAbilitato" type="xs:dateTime" minOccurs="0"/>
+      <xs:element name="dtAggMac" type="xs:dateTime" minOccurs="0"/>
+      <xs:element name="dtModificaMac" type="xs:dateTime" minOccurs="0"/>
+      <xs:element name="dtValoreIniziale" type="xs:dateTime" minOccurs="0"/>
+      <xs:element name="idComp" type="componente" minOccurs="0"/>
+      <xs:element name="idMacchina" type="macchina" minOccurs="0"/>
+      <xs:element name="idParComp" type="parametroCompProd" minOccurs="0"/>
+      <xs:element name="idValComp" type="xs:int" minOccurs="0"/>
+      <xs:element name="valoreIniziale" type="xs:string" minOccurs="0"/>
+      <xs:element name="valoreMac" type="xs:string" minOccurs="0"/>
+      <xs:element name="valoreVariabile" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="valoreParOrdine">
+    <xs:sequence>
+      <xs:element name="abilitato" type="xs:boolean" minOccurs="0"/>
+      <xs:element name="dtAbilitato" type="xs:dateTime" minOccurs="0"/>
+      <xs:element name="id" type="xs:int" minOccurs="0"/>
+      <xs:element name="idMacchina" type="xs:int" minOccurs="0"/>
+      <xs:element name="idOrdineSm" type="xs:int" minOccurs="0"/>
+      <xs:element name="idParOrdine" type="parametroOrdine" minOccurs="0"/>
+      <xs:element name="valore" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="valoreParProd">
+    <xs:sequence>
+      <xs:element name="abilitato" type="xs:boolean" minOccurs="0"/>
+      <xs:element name="dtAbilitato" type="xs:dateTime" minOccurs="0"/>
+      <xs:element name="idCat" type="categoria" minOccurs="0"/>
+      <xs:element name="idParProd" type="parametroProdotto" minOccurs="0"/>
+      <xs:element name="idValParPr" type="xs:int" minOccurs="0"/>
+      <xs:element name="valoreVariabile" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="valoreParProdMac">
+    <xs:sequence>
+      <xs:element name="abilitato" type="xs:boolean" minOccurs="0"/>
+      <xs:element name="dtAbilitato" type="xs:dateTime" minOccurs="0"/>
+      <xs:element name="idMacchina" type="macchina" minOccurs="0"/>
+      <xs:element name="idParPm" type="parametroProdMac" minOccurs="0"/>
+      <xs:element name="idProdotto" type="prodotto" minOccurs="0"/>
+      <xs:element name="idValPm" type="xs:int" minOccurs="0"/>
+      <xs:element name="valoreVariabile" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="valoreParSacchetto">
+    <xs:sequence>
+      <xs:element name="abilitato" type="xs:boolean" minOccurs="0"/>
+      <xs:element name="dtAbilitato" type="xs:dateTime" minOccurs="0"/>
+      <xs:element name="idCat" type="categoria" minOccurs="0"/>
+      <xs:element name="idNumSac" type="numSacchetto" minOccurs="0"/>
+      <xs:element name="idParSac" type="parametroSacchetto" minOccurs="0"/>
+      <xs:element name="idValParSac" type="xs:int" minOccurs="0"/>
+      <xs:element name="sacchetto" type="xs:int" minOccurs="0"/>
+      <xs:element name="valoreVariabile" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="valoreParSingMac">
+    <xs:sequence>
+      <xs:element name="abilitato" type="xs:boolean" minOccurs="0"/>
+      <xs:element name="dtAbilitato" type="xs:dateTime" minOccurs="0"/>
+      <xs:element name="dtAggMac" type="xs:dateTime" minOccurs="0"/>
+      <xs:element name="dtModificaMac" type="xs:dateTime" minOccurs="0"/>
+      <xs:element name="dtValoreIniziale" type="xs:dateTime" minOccurs="0"/>
+      <xs:element name="idMacchina" type="macchina" minOccurs="0"/>
+      <xs:element name="idParSm" type="parametroSingMac" minOccurs="0"/>
+      <xs:element name="idValParSm" type="xs:int" minOccurs="0"/>
+      <xs:element name="valoreIniziale" type="xs:string" minOccurs="0"/>
+      <xs:element name="valoreMac" type="xs:string" minOccurs="0"/>
+      <xs:element name="valoreVariabile" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="valoreProdotto">
+    <xs:sequence>
+      <xs:element name="abilitato" type="xs:boolean" minOccurs="0"/>
+      <xs:element name="dtAbilitato" type="xs:dateTime" minOccurs="0"/>
+      <xs:element name="idParProd" type="parametroProd" minOccurs="0"/>
+      <xs:element name="idProdotto" type="prodotto" minOccurs="0"/>
+      <xs:element name="idValPr" type="xs:int" minOccurs="0"/>
+      <xs:element name="valoreVariabile" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="valoreRipristino">
+    <xs:sequence>
+      <xs:element name="abilitato" type="xs:boolean" minOccurs="0"/>
+      <xs:element name="dtAbilitato" type="xs:dateTime" minOccurs="0"/>
+      <xs:element name="dtAggMac" type="xs:dateTime" minOccurs="0"/>
+      <xs:element name="dtRegistrato" type="xs:dateTime" minOccurs="0"/>
+      <xs:element name="idParRipristino" type="parametroRipristino" minOccurs="0"/>
+      <xs:element name="idProCorso" type="xs:int" minOccurs="0"/>
+      <xs:element name="valoreRipristinoPK" type="valoreRipristinoPK" minOccurs="0"/>
+      <xs:element name="valoreVariabile" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="valoreRipristinoPK">
+    <xs:sequence>
+      <xs:element name="idMacchina" type="xs:int"/>
+      <xs:element name="idValoreRipristino" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
+

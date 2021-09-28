@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="1.0" xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_1_0.xsd">
+  <persistence-unit name="SERVER_PU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.hibernate.ejb.HibernatePersistence</provider>
+    <class>it.personalfactory.syncorigami.server.entity.Lotto</class>
+    <class>it.personalfactory.syncorigami.server.entity.Prodotto</class>
+    <class>it.personalfactory.syncorigami.server.entity.ParametroCompProd</class>
+    <class>it.personalfactory.syncorigami.server.entity.ParametroGlobMac</class>
+    <class>it.personalfactory.syncorigami.server.entity.AnagrafeMacchina</class>
+    <class>it.personalfactory.syncorigami.server.entity.AnagrafeProdotto</class>
+    <class>it.personalfactory.syncorigami.server.entity.ValoreParSacchetto</class>
+    <class>it.personalfactory.syncorigami.server.entity.ValoreRipristino</class>
+    <class>it.personalfactory.syncorigami.server.entity.NumSacchetto</class>
+    <class>it.personalfactory.syncorigami.server.entity.Categoria</class>
+    <class>it.personalfactory.syncorigami.server.entity.Chimica</class>
+    <class>it.personalfactory.syncorigami.server.entity.Lingua</class>
+    <class>it.personalfactory.syncorigami.server.entity.ValoreParProd</class>
+    <class>it.personalfactory.syncorigami.server.entity.Macchina</class>
+    <class>it.personalfactory.syncorigami.server.entity.Colore</class>
+    <class>it.personalfactory.syncorigami.server.entity.ParametroRipristino</class>
+    <class>it.personalfactory.syncorigami.server.entity.Processo</class>
+    <class>it.personalfactory.syncorigami.server.entity.DizionarioTipo</class>
+    <class>it.personalfactory.syncorigami.server.entity.MessaggioMacchina</class>
+    <class>it.personalfactory.syncorigami.server.entity.Codice</class>
+    <class>it.personalfactory.syncorigami.server.entity.Mazzetta</class>
+    <class>it.personalfactory.syncorigami.server.entity.ParametroSacchetto</class>
+    <class>it.personalfactory.syncorigami.server.entity.ComponenteProdotto</class>
+    <class>it.personalfactory.syncorigami.server.entity.Aggiornamento</class>
+    <class>it.personalfactory.syncorigami.server.entity.Presa</class>
+    <class>it.personalfactory.syncorigami.server.entity.ColoreBase</class>
+    <class>it.personalfactory.syncorigami.server.entity.ValoreParSingMac</class>
+    <class>it.personalfactory.syncorigami.server.entity.MazzettaColSingMac</class>
+    <class>it.personalfactory.syncorigami.server.entity.Bolla</class>
+    <class>it.personalfactory.syncorigami.server.entity.ParametroSingMac</class>
+    <class>it.personalfactory.syncorigami.server.entity.Dizionario</class>
+    <class>it.personalfactory.syncorigami.server.entity.ParametroProdotto</class>
+    <class>it.personalfactory.syncorigami.server.entity.MazzettaColorata</class>
+    <class>it.personalfactory.syncorigami.server.entity.AggiornamentoConfig</class>
+    <class>it.personalfactory.syncorigami.server.entity.Componente</class>
+    <class>it.personalfactory.syncorigami.server.entity.ValoreParComp</class>
+    <class>it.personalfactory.syncorigami.server.entity.Gruppo</class>
+    <class>it.personalfactory.syncorigami.server.entity.Comune</class>
+    <class>it.personalfactory.syncorigami.server.entity.ParametroProd</class>
+    <class>it.personalfactory.syncorigami.server.entity.ValoreProdotto</class>
+    <class>it.personalfactory.syncorigami.server.entity.ParametroProdMac</class>
+    <class>it.personalfactory.syncorigami.server.entity.ValoreParProdMac</class>
+    <class>it.personalfactory.syncorigami.server.entity.Ciclo</class>
+    <class>it.personalfactory.syncorigami.server.entity.OrdineElenco</class>
+    <class>it.personalfactory.syncorigami.server.entity.ValoreAllarme</class>
+    <class>it.personalfactory.syncorigami.server.entity.OrdineSingMac</class>
+    <class>it.personalfactory.syncorigami.server.entity.MovimentoSingMac</class>
+    <class>it.personalfactory.syncorigami.server.entity.ValoreParOrdine</class>
+    <class>it.personalfactory.syncorigami.server.entity.ParametroOrdine</class>
+    <class>it.personalfactory.syncorigami.server.entity.CicloProcesso</class>
+    <class>it.personalfactory.syncorigami.server.entity.Allarme</class>
+    <class>it.personalfactory.syncorigami.server.entity.ComponentePesatura</class>
+    <class>it.personalfactory.syncorigami.macchina.entity.OrdineSingMacOri</class>
+    <class>it.personalfactory.syncorigami.macchina.entity.ValoreParOrdineOri</class>
+    <class>it.personalfactory.syncorigami.macchina.entity.AllarmeOri</class>
+    <class>it.personalfactory.syncorigami.macchina.entity.ValoreAllarmeOri</class>
+    <class>it.personalfactory.syncorigami.macchina.entity.MovimentoSingMacOri</class>
+    <class>it.personalfactory.syncorigami.macchina.entity.CicloOri</class>
+    <class>it.personalfactory.syncorigami.macchina.entity.CicloProcessoOri</class>
+    <class>it.personalfactory.syncorigami.macchina.entity.ComponentePesaturaOri</class>
+    <class>it.personalfactory.syncorigami.server.entity.Figura</class>
+    <class>it.personalfactory.syncorigami.server.entity.FiguraTipo</class>
+    <class>it.personalfactory.syncorigami.macchina.entity.FiguraOri</class>
+    <class>it.personalfactory.syncorigami.macchina.entity.FiguraTipoOri</class>
+   
+    
+    <properties>
+    <property name="hibernate.connection.username" value="testuser"/>
+    <property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver"/>
+    <property name="hibernate.connection.password" value="testuser"/>
+    <property name="hibernate.connection.url" value="jdbc:mysql://localhost:3306/serverdb"/>
+    <property name="hibernate.cache.provider_class" value="org.hibernate.cache.NoCacheProvider"/>
+    <property name="hibernate.show_sql" value="false"/>
+    </properties>
+    
+    
+    <!--connessione per kerneos
+    <properties>
+    <property name="hibernate.connection.username" value="root"/>
+    <property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver"/>
+    <property name="hibernate.connection.password" value="iso1710"/>
+    <property name="hibernate.connection.url" value="jdbc:mysql://localhost:3306/serverdb"/>
+    <property name="hibernate.cache.provider_class" value="org.hibernate.cache.NoCacheProvider"/>
+    <property name="hibernate.show_sql" value="false"/>
+    </properties>-->
+    
+  </persistence-unit>
+    
+    
+    
+  
+  <!--<persistence-unit name="MACCHINA_PU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.hibernate.ejb.HibernatePersistence</provider>
+    <class>it.personalfactory.syncorigami.macchina.entity.PresaOri</class>
+    <class>it.personalfactory.syncorigami.macchina.entity.DizionarioOri</class>
+    <class>it.personalfactory.syncorigami.macchina.entity.ColoreBaseOri</class>
+    <class>it.personalfactory.syncorigami.macchina.entity.MazzettaColorataOri</class>
+    <class>it.personalfactory.syncorigami.macchina.entity.ValoreParSacchettoOri</class>
+    <class>it.personalfactory.syncorigami.macchina.entity.NumSacchettoOri</class>
+    <class>it.personalfactory.syncorigami.macchina.entity.ColoreOri</class>
+    <class>it.personalfactory.syncorigami.macchina.entity.MacchinaOri</class>
+    <class>it.personalfactory.syncorigami.macchina.entity.ProdottoOri</class>
+    <class>it.personalfactory.syncorigami.macchina.entity.ParametroGlobMacOri</class>
+    <class>it.personalfactory.syncorigami.macchina.entity.ComponenteProdottoOri</class>
+    <class>it.personalfactory.syncorigami.macchina.entity.ValoreParSingMacOri</class>
+    <class>it.personalfactory.syncorigami.macchina.entity.ParametroCompProdOri</class>
+    <class>it.personalfactory.syncorigami.macchina.entity.ValoreRipristinoOri</class>
+    <class>it.personalfactory.syncorigami.macchina.entity.ProcessoOri</class>
+    <class>it.personalfactory.syncorigami.macchina.entity.MazzettaColSingMacOri</class>
+    <class>it.personalfactory.syncorigami.macchina.entity.ChimicaOri</class>
+    <class>it.personalfactory.syncorigami.macchina.entity.CategoriaOri</class>
+    <class>it.personalfactory.syncorigami.macchina.entity.AggiornamentoOri</class>
+    <class>it.personalfactory.syncorigami.macchina.entity.ValoreParProdOri</class>
+    <class>it.personalfactory.syncorigami.macchina.entity.MazzettaOri</class>
+    <class>it.personalfactory.syncorigami.macchina.entity.AggiornamentoConfigOri</class>
+    <class>it.personalfactory.syncorigami.macchina.entity.ValoreParCompOri</class>
+    <properties>
+      <property name="hibernate.cache.provider_class" value="org.hibernate.cache.NoCacheProvider"/>
+      <property name="hibernate.show_sql" value="false"/>
+      <property name="hibernate.cache.provider_class" value="org.hibernate.cache.NoCacheProvider"/>
+      <property name="hibernate.connection.username" value="testuser"/>
+      <property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver"/>
+      <property name="hibernate.connection.password" value="testuser"/>
+      <property name="hibernate.connection.url" value="jdbc:mysql://localhost:3306/origamidb"/>
+    </properties>
+  </persistence-unit>-->
+</persistence>
