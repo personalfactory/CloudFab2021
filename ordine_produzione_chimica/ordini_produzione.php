@@ -298,22 +298,25 @@
 <?php if ($visualizzaUtente) { ?> 	<td class="cella1" style="text-align:center; font-size: 12px;" ><?php echo $elencoOrdini[$i][21]; ?></td><?php } ?>  
 <?php if ($visualizzaAzienda) { ?> 	<td class="cella1" style="text-align:center; font-size: 12px;" ><?php echo $elencoOrdini[$i][22]; ?></td><?php } ?> 
  								
-									<td class="<?php echo $i ?>">
+									<td class="<?php echo $i ?>">  
 										
+										<a href="edita_note.php?&ordine=<?php echo $elencoOrdini[$i][0]; ?>" > 
+										 	<img src="../images/pittogrammi/penna_R.png" class="icone"  title="<?php echo $titleStrumentoOrdine0; ?>"</a>	 
                             			<a href="evasione_ordine.php?&ordine=<?php echo $elencoOrdini[$i][0]; ?>" <?php if ($elencoOrdini[$i][7]!="0" || $elencoOrdini[$i][10]!="0"){ ?>  style="pointer-events: none;  cursor: default;"<?php } ?>>
-											<img src="../images/pittogrammi/ok.png" class="icone" title="<?php echo $titelStrumentoOrdine0 ?>" /></a>
+											<img src="../images/pittogrammi/ok.png" class="icone" title="<?php echo $titleStrumentoOrdine1 ?>" /></a>
 										 
 										<a href="annulla_ordine.php?&ordine=<?php echo $elencoOrdini[$i][0]; ?>" <?php if ($elencoOrdini[$i][10]!="0" || $elencoOrdini[$i][7]!="0"){ ?>  style="pointer-events: none;  cursor: default;"<?php } ?>> 
-										 	<img src="../images/pittogrammi/lucchetto_R.png" class="icone"  title="<?php echo $titelStrumentoOrdine1; ?>"/></a>	 
+										 	<img src="../images/pittogrammi/lucchetto_R.png" class="icone"  title="<?php echo $titleStrumentoOrdine2; ?>"/></a>	 
 										
 										<a href="visualizza_ordine.php?&ordine=<?php echo $elencoOrdini[$i][0]; ?>">
-										 	<img src="../images/pittogrammi/stampa_R.png" class="icone"  title="<?php echo $titelStrumentoOrdine2; ?>"/></a>	
-										
-										<a href="disabilita_ordine.php?&ordine=<?php echo $elencoOrdini[$i][0]; ?>" > 
-										 	<img src="../images/pittogrammi/patumiera_G.png" class="icone"  title="<?php echo $titelStrumentoOrdine3; ?>"</a>	
-											
+										 	<img src="../images/pittogrammi/stampa_R.png" class="icone"  title="<?php echo $titleStrumentoOrdine3; ?>"/></a>	
 										<a href="visualizza_ordine_stampa.php?&ordine=<?php echo $elencoOrdini[$i][0]; ?>" > 
-										 	<img src="../images/pittogrammi/stampa_G.png" class="icone"  title="<?php echo $titelStrumentoOrdine3; ?>"</a>	
+										 	<img src="../images/pittogrammi/stampa_G.png" class="icone"  title="<?php echo $titleStrumentoOrdine4; ?>"</a>
+											
+										<a href="disabilita_ordine.php?&ordine=<?php echo $elencoOrdini[$i][0]; ?>" > 
+										 	<img src="../images/pittogrammi/patumiera_G.png" class="icone"  title="<?php echo $titleStrumentoOrdine5; ?>"</a>	
+											
+											
 										 
                        			 	</td> 
 									

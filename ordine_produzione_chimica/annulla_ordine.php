@@ -1,5 +1,4 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-EVASIONE ORDINE
 <html>
     <?php include('../include/validator.php'); ?>
     <head>
@@ -23,8 +22,7 @@ EVASIONE ORDINE
 					array_push($elenco_resp, $res['nome']. " ".$res['cognome']); 
 
 				}	
-		?>
-		
+		?> 
 		<script> 
 		function salva(){
 			 
@@ -171,49 +169,51 @@ EVASIONE ORDINE
             ?>
         <table width="100%" class="table2" id= "dati_odine">
 			<tr>
-				<td class="cella3" colspan="4" style="font-size: 14px;" id="rep";><?php echo $titleDettagliAnnllaOrdine; ?></td>
+				<td class="cella3" colspan="5" style="font-size: 14px;" id="rep";><?php echo $titleDettaglEvadiOrdine; ?></td>
 			</tr> 
 			<tr> 
-				<th class="cella2" colspan="1" style="font-size: 12px;"> <label><?php echo $titleDettagliIdOrdine ; ?></label></th> 
-				<th class="cella1" colspan="3" style="font-size: 14px; font-weight:normal; "> <?php echo $id; ?></th>  
+				<th class="cella2" colspan="1" style="font-size: 12px; width:600px;"> <label><?php echo $titleDettagliIdOrdine; ?></label></th> 
+				<th class="cella1" colspan="4" style="font-size: 14px; font-weight:normal; "> <?php echo $id; ?></th>  
 			</tr>  
 			<tr> 
-				<th class="cella2" colspan="1" style="font-size: 12px;"> <label><?php echo $titleDettagliCodiceOrdine; ?></label></th> 
-				<th class="cella1" colspan="3" style="font-size: 14px; font-weight:normal; "> <?php echo $codice_ordine; ?></th>  
+				<th class="cella2" colspan="1" style="font-size: 12px; "> <label><?php echo $titleDettagliCodiceOrdine; ?></label></th> 
+				<th class="cella1" colspan="4" style="font-size: 14px; font-weight:normal; "> <?php echo $codice_ordine; ?></th>  
 			</tr>  
 			<tr> 
-				<th class="cella2" colspan="1" style="font-size: 12px;"> <label><?php echo $titleDettagliDataOrdine; ?></label></th> 
-				<th class="cella1" colspan="3" style="font-size: 14px; font-weight:normal; "> <?php echo $data; ?></th>  
+				<th class="cella2" colspan="1" style="font-size: 12px; "> <label><?php echo $titleDettagliDataOrdine; ?></label></th> 
+				<th class="cella1" colspan="4" style="font-size: 14px; font-weight:normal; "> <?php echo $data; ?></th>  
 			</tr> 
 			<tr> 
-				<th class="cella2" colspan="1" style="font-size: 12px;"> <label><?php echo $titleDettagliOrdineAbilitato; ?></label></th> 
-				<th class="cella1" colspan="3" style="font-size: 14px; font-weight:normal; "> <?php echo $abilitato; ?></th>  
+				<th class="cella2" colspan="1" style="font-size: 12px; "> <label><?php echo $titleDettagliOrdineAbilitato; ?></label></th> 
+				<th class="cella1" colspan="4" style="font-size: 14px; font-weight:normal; "> <?php echo $abilitato; ?></th>  
 			</tr> 
 			<tr> 
-				<th class="cella2" colspan="1" style="font-size: 12px;"> <label><?php echo $titleDettagliOrdineDataAbilitato; ?></label></th> 
-				<th class="cella1" colspan="3" style="font-size: 14px; font-weight:normal; "> <?php echo $dt_abilitato; ?></th>  
-			</tr>  
+				<th class="cella2" colspan="1" style="font-size: 12px; "> <label><?php echo $titleDettagliOrdineDataAbilitato; ?></label></th> 
+				<th class="cella1" colspan="4" style="font-size: 14px; font-weight:normal; "> <?php echo $dt_abilitato; ?></th>  
+			</tr> 
 			<tr> 
-				<th class="cella2" colspan="1" style="font-size: 12px;"> <label><?php echo $titleDettagliOrdineDataEvasionePrevista; ?></label></th> 
-				<th class="cella1" colspan="3" style="font-size: 14px; font-weight:normal; "> <?php echo $data_evasione_prevista; ?></th>  
+				<th class="cella2" colspan="1" style="font-size: 12px; "> <label><?php echo $titleDettagliOrdineDataEvasionePrevista; ?></label></th> 
+				<th class="cella1" colspan="4" style="font-size: 14px; font-weight:normal; "> <?php echo $data_evasione_prevista; ?></th>  
 		 	</tr> 
-			  
+			 
 			<tr> 
-				<th class="cella2" colspan="1" style="font-size: 12px;"> <label><?php echo $titleDettagliOrdineNote; ?></label></th> 
-				<th class="cella1" colspan="3" style="font-size: 14px; font-weight:normal; "> <?php echo $note; ?></th>  
+				<th class="cella2" colspan="1" style="font-size: 12px; "> <label><?php echo $titleDettagliOrdineNote; ?></label></th> 
+				<th class="cella1" colspan="4" style="font-size: 14px; font-weight:normal; "> <?php echo $note; ?></th>  
 		 	</tr>
 			
 			<tr>
-				<td class="cella3" colspan="4" style="font-size: 14px;" id="rep";><?php echo $titleDettagliProdottiInOrdine; ?></td>
+				<td class="cella3" colspan="5" style="font-size: 14px;" id="rep";><?php echo $titleDettagliProdottiInOrdine; ?></td>
 			</tr> 
 			
 			<tr>
-				<td class="cella2" colspan="1" style="font-size: 14px;" id="rep";><?php echo $titleDettagliProdottiProdotto; ?></td>
-				<td class="cella2" colspan="1" style="font-size: 14px;" id="rep";><?php echo $titleDettagliProdottiMagazzino; ?></td>
-				<td class="cella2" colspan="1" style="font-size: 14px;" id="rep";><?php echo $titleDettagliProdottiRichiesta; ?></td>
-				<td class="cella2" colspan="1" style="font-size: 14px;" id="rep";><?php echo $titleDettagliProdottiDaProdurre; ?></td>
+				<td class="cella2" colspan="1" style="font-size: 12px; font-weight: bold; text-align: left;"><?php echo $titleDettagliProdottiProdotto; ?></td>
+				<td class="cella2" colspan="1" style="font-size: 12px; font-weight: bold; width:100px; text-align: center;"><?php echo $titleDettagliProdottiMagazzino; ?></td>
+				<td class="cella2" colspan="1" style="font-size: 12px; font-weight: bold; width=100px; text-align: center;"><?php echo $titleDettagliProdottiRichiesta; ?></td>
+				<td class="cella2" colspan="1" style="font-size: 12px; font-weight: bold; width=100px; text-align: center;"><?php echo $titleDettagliProdottiDaProdurre; ?></td> 
+				<td class="cella2" colspan="2" style="font-size: 12px; font-weight: bold; text-align: center;" ><?php echo $titelOrdineNote; ?></td>
 				
 			</tr> 
+			
 			
 			<?php 
 			for ($i=0; $i<count($prodotti); $i++){?>
@@ -221,43 +221,45 @@ EVASIONE ORDINE
 					<th class="cella1" colspan="1" style="font-size: 14px; font-weight:normal; "> <?php echo $prodotti[$i]; ?></th>   
 					<th class="cella1" colspan="1" style="font-size: 14px; font-weight:normal; "> <?php echo $q_magazzino[$i]; ?></th>  
 					<th class="cella1" colspan="1" style="font-size: 14px; font-weight:normal; "> <?php echo $q_richiesta[$i]; ?></th>  
-					<th class="cella1" colspan="1" style="font-size: 14px; font-weight:normal; "> <?php echo $q_produrre[$i]; ?></th>  
+					<th class="cella1" colspan="1" style="font-size: 14px; font-weight:normal; "> <?php echo $q_produrre[$i]; ?></th>   
+					<th class="cella1" colspan="1" style="font-size: 14px; font-weight:normal; "> <?php echo $note_prodotto[$i]; ?></th>  
 		 		</tr>
 				
 				
 			<?php } ?>
+			
 			 
 			<tr>
-				<td class="cella3" colspan="4" style="font-size: 14px;" id="rep";><?php echo $titleDettagliMateriePrimeUtilizzate; ?></td>
+				<td class="cella3" colspan="5" style="font-size: 14px;" id="rep";><?php echo $titleDettagliMateriePrimeUtilizzate; ?></td>
 			</tr> 
 			
 			<tr>
-				<td class="cella2" colspan="2" style="font-size: 14px;" id="rep";><?php echo $titleDettagliMateriePrimeComponente; ?></td>
-				<td class="cella2" colspan="2" style="font-size: 14px;" id="rep";><?php echo $titleDettagliMateriePrimeQuantita; ?></td> 
+				<td class="cella2" colspan="3" style="font-size: 12px; font-weight: bold; text-align: left;" ><?php echo $titleDettagliMateriePrimeComponente; ?></td>
+				<td class="cella2" colspan="2" style="font-size: 12px; font-weight: bold; text-align: center;" ><?php echo $titleDettagliMateriePrimeQuantita ; ?></td> 
 				
 			</tr> 
 			
 			<?php 
 			for ($i=0; $i<count($comp_codice); $i++){ ?>
 				<tr> 
-					<th class="cella1" colspan="2" style="font-size: 14px; font-weight:normal; "> <?php echo $comp_codice[$i]. " - ". $comp_nome[$i]; ?></th>   
-					<th class="cella1" colspan="2" style="font-size: 14px; font-weight:normal; "> <?php echo $comp_quantita[$i]; ?></th>  
+					<th class="cella1" colspan="3" style="font-size: 14px; font-weight:normal; "> <?php echo $comp_codice[$i]. " - ". $comp_nome[$i]; ?></th>   
+					<th class="cella1" colspan="2" style="font-size: 14px; font-weight:normal; text-align: center;"> <?php echo $comp_quantita[$i]; ?></th>  
 		 		</tr>
 				
 				
-			<?php }?>
+			<?php }?> 
 			 
 			<tr>
-				<td class="cella3" colspan="4" style="font-size: 14px;" id="rep";><?php echo $titleDettagliAnnullamento; ?></td>
+				<td class="cella3" colspan="5" style="font-size: 14px;" ><?php echo $titleDettagliAnnullamento; ?></td>
 			</tr> 
 			 
 			<tr> 
 				<th class="cella2" colspan="1" style="font-size: 12px;"> <label><?php echo $titleDettagliAnnullamentoData; ?></label></th> 
-				<th class="cella1" colspan="3" id="dataAnnullamento" style="font-size: 14px; font-weight:normal; "> <?php date_default_timezone_set('UTC'); echo date('Y-m-d H:i:s'); ?></th>
+				<th class="cella1" colspan="4" id="dataAnnullamento" style="font-size: 14px; font-weight:normal; "> <?php date_default_timezone_set('UTC'); echo date('Y-m-d H:i:s'); ?></th>
 			</tr> 
 			<tr> 
-				<th class="cella2" colspan="1" style="font-size: 12px; width:100%; "><?php echo $titleDettagliAnnullamentoResponsabile;?> </th>
-                <th  class="cella1 "  colspan="3">
+				<th class="cella2" colspan="1" style="font-size: 12px; "><?php echo $titleDettagliAnnullamentoResponsabile;?> </th>
+                <th  class="cella1 "  colspan="4">
 					<select class="select" id="respAnnullamento" style="font-size:12pt; font-weight:normal; height:20px;width:300px;">  
 						<?php for ($i =0; $i<count($elenco_resp); $i++) { ?> 
 						<option value="<?php echo $i; ?>"><?php echo $elenco_resp[$i];?></option>  
@@ -267,9 +269,9 @@ EVASIONE ORDINE
 					<input id="respAnnullamento" style="font-size:12pt; font-weight:normal; height:20px;width:300px;"> </input> </td> -->
 			</tr>
 			<tr> 
-				<th class="cella2" colspan="1" style="font-size: 12px; width:100%; "><?php echo $titleDettagliAnnullamentoNote?> </th>
-                <th  class="cella1" colspan="3">
-					<textarea id="noteAnnullamento" style="font-size:12pt; font-weight:normal; height:100px;width:800px; float: right;text-align:right"> </textarea> </td> 
+				<th class="cella2" colspan="1" style="font-size: 12px; "><?php echo $titleDettagliAnnullamentoNote?> </th>
+                <th  class="cella1" colspan="4">
+					<textarea id="noteAnnullamento" style="font-size:12pt; font-weight:normal; height:100px;width:750px; float: right;text-align:right"> </textarea> </td> 
 			</tr>  
 		</table>
 

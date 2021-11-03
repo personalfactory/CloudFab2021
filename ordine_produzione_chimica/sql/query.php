@@ -253,5 +253,25 @@ function disabilitaCodiceLotto($codiceLotto, $dataBolla) {
     return $sql;
 }	
 
+function updateNote($note) {
+ 
+	global $dbname;  
+	
+	mysql_query("USE ".$dbname . mysql_error());
+
+	$stringSql = "UPDATE ordine_produzione_chimica SET note ='".$note[1]."' WHERE id = '".$note[0]."';";
+	
+	$sql = mysql_query($stringSql)
+            or die("ERROR IN FUNCTION  updateNote - " . $stringSql . " - " . mysql_error());
+	
+	for ($i=0; $i<$note[2]; $i++){
+		$stringSql = "UPDATE ordine_produzione_chimica_dettagli SET valore = '".$note[3+$i*2]."' WHERE id = '".$note[4+$i*2]."';";
+		$sql = mysql_query($stringSql)
+           or die("ERROR IN FUNCTION  disabilitaCodiceLotto2 - " . $stringSq2 . " - " . mysql_error());
+	}
+	
+    return $sql;
+}
+
 
 ?> 

@@ -255,9 +255,10 @@
 			
 			<tr>
 				<td class="cella2" colspan="3" style="font-size: 12px;" id="rep";><?php echo $titleDettagliProdottiProdotto; ?></td>
-				<td class="cella2" colspan="2" style="font-size: 12px; text-align: center;" id="rep ";><?php echo $titleDettagliProdottiMagazzino." (" .$titlePezzi. ")"; ?></td>
-				<td class="cella2" colspan="2" style="font-size: 12px; text-align: center;" id="rep";><?php echo $titleDettagliProdottiRichiesta." (" .$titlePezzi. ")"; ?></td>
-				<td class="cella2" colspan="2" style="font-size: 12px;text-align: center;" id="rep";><?php echo $titleDettagliProdottiDaProdurre." (" .$titlePezzi. ")"; ?></td>
+				<td class="cella2" colspan="1" style="font-size: 12px; text-align: center;"><?php echo $titleDettagliProdottiMagazzino." (" .$titlePezzi. ")"; ?></td>
+				<td class="cella2" colspan="1" style="font-size: 12px; text-align: center;"><?php echo $titleDettagliProdottiRichiesta." (" .$titlePezzi. ")"; ?></td>
+				<td class="cella2" colspan="1" style="font-size: 12px;text-align: center;"><?php echo $titleDettagliProdottiDaProdurre." (" .$titlePezzi. ")"; ?></td>
+				<td class="cella2" colspan="3" style="font-size: 12px;text-align: center;"><?php echo $titelOrdineNote; ?></td>
 				
 			</tr> 
 			
@@ -265,9 +266,11 @@
 			for ($i=0; $i<count($prodotti); $i++){?>
 				<tr> 
 					<th class="cella1" colspan="3" style="font-size: 12px; font-weight:normal;"> <?php echo $prodotti[$i]; ?></th>   
-					<th class="cella1" colspan="2" style="font-size: 12px; font-weight:normal; text-align: center;"> <?php echo $q_magazzino[$i] ?></th>  
-					<th class="cella1" colspan="2" style="font-size: 12px; font-weight:normal; text-align: center;"> <?php echo $q_richiesta[$i]?></th>  
-					<th class="cella1" colspan="2" style="font-size: 12px; font-weight:normal; text-align: center;"> <?php echo $q_produrre[$i]; ?></th>  
+					<th class="cella1" colspan="1" style="font-size: 12px; font-weight:normal; text-align: center;"><?php echo $q_magazzino[$i] ?></th>  
+					<th class="cella1" colspan="1" style="font-size: 12px; font-weight:normal; text-align: center;"><?php echo $q_richiesta[$i]?></th>  
+					<th class="cella1" colspan="1" style="font-size: 12px; font-weight:normal; text-align: center;"><?php echo $q_produrre[$i]; ?></th>   
+					<th class="cella1" colspan="3" style="font-size: 12px; font-weight:normal; text-align: left;"><?php echo $note_prodotto[$i]; ?></th> 
+					
 		 		</tr>
 				
 				

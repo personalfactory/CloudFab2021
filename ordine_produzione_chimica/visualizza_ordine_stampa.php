@@ -163,36 +163,36 @@
 			
 			 
             ?>
-        <table width="100%"  id= "dati_odine" border="1" bordercolor="gray" bordercolorlight="#00CCFF" >
+         <table width="100%"  id= "dati_odine" border="1" bordercolor="gray" bordercolorlight="#00CCFF" style="border-width:inherit;">
 			<tr>
 				<td colspan="9" style="font-size: 16px; text-align: center; font-weight: bold; background-color: lightgray; height: 40px;"><?php echo $titleDettagOrdine; ?></td>
 			</tr> 
 			<tr> 
-				<th colspan="3" style="font-size: 16px;"> <label><?php echo $titleDettagliIdOrdine; ?></label></th> 
-				<th colspan="6" style="font-size: 16px; font-weight:normal; "> <?php echo $id; ?></th>  
+				<th colspan="2" style="font-size: 14px; text-align: right;"> <label><?php echo $titleDettagliIdOrdine; ?></label></th> 
+				<th colspan="7" style="font-size: 16px; font-weight:normal; "> <?php echo $id; ?></th>  
 			</tr>  
 			<tr> 
-				<th colspan="3" style="font-size: 16px;"> <label><?php echo $titleDettagliCodiceOrdine; ?></label></th> 
-				<th colspan="6" style="font-size: 16px; font-weight:normal; "> <?php echo $codice_ordine; ?></th>  
+				<th colspan="2" style="font-size: 14px;text-align: right;"> <label><?php echo $titleDettagliCodiceOrdine; ?></label></th> 
+				<th colspan="7" style="font-size: 16px; font-weight:normal; "> <?php echo $codice_ordine; ?></th>  
 			</tr>  
 			<tr> 
-				<th colspan="3" style="font-size: 16px;"> <label><?php echo $titleDettagliDataOrdine; ?></label></th> 
-				<th colspan="6" style="font-size: 16px; font-weight:normal; "> <?php echo $data; ?></th>  
+				<th colspan="2" style="font-size: 14px;text-align: right;"> <label><?php echo $titleDettagliDataOrdine; ?></label></th> 
+				<th colspan="7" style="font-size: 16px; font-weight:normal; "> <?php echo $data; ?></th>  
 			</tr> 
 			<tr> 
-				<th colspan="3" style="font-size: 16px;"> <label><?php echo $titleDettagliOrdineAbilitato; ?></label></th> 
-				<th colspan="6" style="font-size: 16px; font-weight:normal; "> <?php echo $abilitato; ?></th>  
+				<th colspan="2" style="font-size: 14px;text-align: right;"> <label><?php echo $titleDettagliOrdineAbilitato; ?></label></th> 
+				<th colspan="7" style="font-size: 16px; font-weight:normal; "> <?php echo $abilitato; ?></th>  
 			</tr> 
 			<tr> 
-				<th colspan="3" style="font-size: 16px;"> <label><?php echo $titleDettagliOrdineDataAbilitato; ?></label></th> 
-				<th colspan="6" style="font-size: 16px; font-weight:normal; "> <?php echo $dt_abilitato; ?></th>  
+				<th colspan="2" style="font-size: 14px;text-align: right;"> <label><?php echo $titleDettagliOrdineDataAbilitato; ?></label></th> 
+				<th colspan="7" style="font-size: 16px; font-weight:normal; "> <?php echo $dt_abilitato; ?></th>  
 			</tr>  
 			<tr> 
-				<th colspan="3" style="font-size: 16px;"> <label><?php echo $titleDettagliOrdineDataEvasionePrevista; ?></label></th> 
-				<th colspan="6" style="font-size: 16px; font-weight:normal; "> <?php echo $data_evasione_prevista; ?></th>  
+				<th colspan="2" style="font-size: 14px;text-align: right;"> <label><?php echo $titleDettagliOrdineDataEvasionePrevista; ?></label></th> 
+				<th colspan="7" style="font-size: 16px; font-weight:normal; "> <?php echo $data_evasione_prevista; ?></th>  
 		 	</tr>
 			<tr> 
-				<th colspan="2" style="font-size: 16px;"> <label><?php echo $titleDettagliOrdineNote ; ?></label></th> 
+				<th colspan="2" style="font-size: 14px;text-align: right;"> <label><?php echo $titleDettagliOrdineNote ; ?></label></th> 
 				<th colspan="7" style="font-size: 16px; font-weight:normal; "> <?php echo $note; ?></th>  
 		 	</tr>
 			
@@ -245,20 +245,22 @@
 			</tr> 
 			
 			<tr>
-				<td colspan="3" style="font-size: 14px; background-color:darkgray;" id="rep";><?php echo $titleDettagliProdottiProdotto; ?></td>
-				<td colspan="2" style="font-size: 14px; text-align: center; background-color:darkgray;" id="rep ";><?php echo $titleDettagliProdottiMagazzino." (" .$titlePezzi. ")"; ?></td>
-				<td colspan="2" style="font-size: 14px; text-align: center; background-color:darkgray;" id="rep";><?php echo $titleDettagliProdottiRichiesta." (" .$titlePezzi. ")"; ?></td>
-				<td colspan="2" style="font-size: 14px;text-align: center; background-color:darkgray;" id="rep";><?php echo $titleDettagliProdottiDaProdurre." (" .$titlePezzi. ")"; ?></td>
+				<td colspan="3" style="font-size: 14px; background-color:darkgray; text-align: left;"><?php echo $titleDettagliProdottiProdotto; ?></td>
+				<td colspan="1" style="font-size: 14px; text-align: center; background-color:darkgray;"><?php echo $titleDettagliProdottiMagazzino." (" .$titlePezzi. ")"; ?></td>
+				<td colspan="1" style="font-size: 14px; text-align: center; background-color:darkgray;"><?php echo $titleDettagliProdottiRichiesta." (" .$titlePezzi. ")"; ?></td>
+				<td colspan="1" style="font-size: 14px;text-align: center; background-color:darkgray;"><?php echo $titleDettagliProdottiDaProdurre." (" .$titlePezzi. ")"; ?></td> 
+				<td colspan="3" style="font-size: 14px;text-align: center; background-color:darkgray;"><?php echo $titelOrdineNote; ?></td>
 				
 			</tr> 
 			
 			<?php 
 			for ($i=0; $i<count($prodotti); $i++){?>
 				<tr> 
-					<th colspan="3" style="font-size: 14px; font-weight:normal; "> <?php echo $prodotti[$i]; ?></th>   
-					<th colspan="2" style="font-size: 14px; font-weight:normal; text-align: center;"> <?php echo $q_magazzino[$i] ?></th>  
-					<th colspan="2" style="font-size: 14px; font-weight:normal; text-align: center;"> <?php echo $q_richiesta[$i]?></th>  
-					<th colspan="2" style="font-size: 14px; font-weight:normal; text-align: center;"> <?php echo $q_produrre[$i]; ?></th>  
+					<th colspan="3" style="font-size: 14px; font-weight:normal; text-align: left;"> <?php echo $prodotti[$i]; ?></th>   
+					<th colspan="1" style="font-size: 14px; font-weight:normal; text-align: center;"> <?php echo $q_magazzino[$i] ?></th>  
+					<th colspan="1" style="font-size: 14px; font-weight:normal; text-align: center;"> <?php echo $q_richiesta[$i]?></th>  
+					<th colspan="1" style="font-size: 14px; font-weight:normal; text-align: center;"> <?php echo $q_produrre[$i]; ?></th>   
+					<th colspan="3" style="font-size: 14px; font-weight:normal; text-align: center;"> <?php echo $note_prodotto[$i]; ?></th> 
 		 		</tr>
 				
 				

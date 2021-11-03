@@ -7,15 +7,15 @@
 
     <?php
     //Se la variabile debug =1 viene visualizzato il log
-    if ($DEBUG)
-        ini_set("display_errors", 1);
-    $actionOnLoad = "";
-    $elencoFunzioni = array("1", "2", "3", "4", "100", "101");
-    $actionOnLoad = gestisciPermessiUtenteOnLoad($elencoFunzioni, $_SESSION['objPermessiVis']);
+  //  if ($DEBUG)
+  //      ini_set("display_errors", 1);
+  //  $actionOnLoad = "";
+ //   $elencoFunzioni = array("1", "2", "3", "4", "100", "101");
+ //   $actionOnLoad = gestisciPermessiUtenteOnLoad($elencoFunzioni, $_SESSION['objPermessiVis']);
     //############# STRINGHE UTENTI - AZIENDE VISIBILI###########################
     //Stringa contenente l'elenco degli id degli utenti e delle aziende prop visibili 
     //dall'utente loggato   
-    $strUtentiAziende = getStrUtAzVisib($_SESSION['objPermessiVis'], 'prodotto');
+//    $strUtentiAziende = getStrUtAzVisib($_SESSION['objPermessiVis'], 'prodotto');
 
     //##########################################################################
     ?>
